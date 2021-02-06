@@ -1,7 +1,8 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 // color palette - these colors will be the color swatches of the Colors section
 
 $color-1: #5f8ee4; // Cornflower Blue - Action color
@@ -9,6 +10,12 @@ $color-2: #19191a; // Dark Blue
 $color-3: #e4655f; // Red
 $color-4: #e6e6e6; // light grey
 $color-5: #ffffff; // white
+
+$cooler-1: #8fbacc; 
+$cooler-2: #155149;
+$cooler-3: #f7eac9;
+$cooler-4: #f29040;
+$cooler-5: #a23216;
 
 // additional colors
 
@@ -18,7 +25,8 @@ $alert: $color-3; // red
 // fonts
 $primary-font: 'Merriweather', serif;
 $secondary-font: 'Open Sans', sans-serif;
-
+$heading-font: 'Anton', sans-serif;
+$other-font: 'Abel', sans-serif;
 /* -------------------------------- 
 
 xBackground 
@@ -152,14 +160,13 @@ main > h1 {
 xTypography 
 
 -------------------------------- */
-
-h1,
 h2 {
   font-family: $secondary-font;
   color: $color-2;
 }
 
 h1 {
+  font-family: $heading-font;
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
@@ -171,8 +178,7 @@ h1 {
 
   @include MQ(M) {
     font-size: 4rem;
-  }
-}
+  }}
 
 h2 {
   font-weight: bold;

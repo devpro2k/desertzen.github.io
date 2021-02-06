@@ -356,6 +356,9 @@ section {
 		margin-bottom: 1em;
 	}
 
+	.cd-box:first-child {
+		width: 39%;
+	}
 	img {
 		display: block;
 		width: 100%;
@@ -457,62 +460,62 @@ section {
 	}
 
 	li:nth-of-type(1) .cd-color-swatch {
-		background: $color-1;
+		background: $cooler-1;
 
 		&::before {
-			background: lighten($color-1, 5%);
+			background: lighten($cooler-1, 5%);
 		}
 
 		&::after {
-			background: darken($color-1, 5%);
+			background: darken($cooler-1, 5%);
 		}
 	}
 
 	li:nth-of-type(2) .cd-color-swatch {
-		background: $color-2;
+		background: $cooler-2;
 
 		&::before {
-			background: lighten($color-2, 5%);
+			background: lighten($cooler-2, 5%);
 		}
 
 		&::after {
-			background: darken($color-2, 5%);
+			background: darken($cooler-2, 5%);
 		}
 	}
 
 	li:nth-of-type(3) .cd-color-swatch {
-		background: $color-3;
+		background: $cooler-3;
 
 		&::before {
-			background: lighten($color-3, 5%);
+			background: lighten($cooler-3, 5%);
 		}
 
 		&::after {
-			background: darken($color-3, 5%);
+			background: darken($cooler-3, 5%);
 		}
 	}
 
 	li:nth-of-type(4) .cd-color-swatch {
-		background: $color-4;
+		background: $cooler-4;
 
 		&::before {
-			background: lighten($color-4, 5%);
+			background: lighten($cooler-4, 5%);
 		}
 
 		&::after {
-			background: darken($color-4, 5%);
+			background: darken($cooler-4, 5%);
 		}
 	}
 
 	li:nth-of-type(5) .cd-color-swatch {
-		background: $color-5;
+		background: $cooler-5;
 
 		&::before {
-			background: lighten($color-5, 5%);
+			background: lighten($cooler-5, 5%);
 		}
 
 		&::after {
-			background: darken($color-5, 5%);
+			background: darken($cooler-5, 5%);
 		}
 	}
 
