@@ -1,0 +1,22 @@
+@import "partials/_color.scss";
+
+#navigation {
+
+    h3, ul {
+    background-color: $cooler-2;
+    color: $cooler-3;
+    width: 30%;
+}
+
+ a:link {
+     color: $cooler-1;
+
+ }
+
+ a:visited {
+     color: $cooler-4;
+ }
+ a:hover {
+     color: $cooler-3;
+ }
+}
