@@ -1,8 +1,10 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
+@import 'partials/color.scss';
+@import 'partials/typography.scss';
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // color palette - these colors will be the color swatches of the Colors section
 
 $color-1: #5f8ee4; // Cornflower Blue - Action color
@@ -11,22 +13,14 @@ $color-3: #e4655f; // Red
 $color-4: #e6e6e6; // light grey
 $color-5: #ffffff; // white
 
-$cooler-1: #8fbacc; 
-$cooler-2: #155149;
-$cooler-3: #f7eac9;
-$cooler-4: #f29040;
-$cooler-5: #a23216;
-
 // additional colors
 
-$success: #6fce72; // green
-$alert: $color-3; // red
+$success: #469b48; // green
+$alert: $cooler-5; // red
 
 // fonts
 $primary-font: 'Merriweather', serif;
 $secondary-font: 'Open Sans', sans-serif;
-$heading-font: 'Anton', sans-serif;
-$other-font: 'Abel', sans-serif;
 /* -------------------------------- 
 
 xBackground 
@@ -178,7 +172,12 @@ h1 {
 
   @include MQ(M) {
     font-size: 4rem;
-  }}
+  }
+
+  p {
+    font-family: $other-font;
+  }
+}
 
 h2 {
   font-weight: bold;
