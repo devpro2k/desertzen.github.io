@@ -1,1 +1,13 @@
 /*content style page layout*/
+/*Large*/
+@media only screen and (max-width: 1040px) {
+}
+
+/*Small*/
+@media only screen and (max-width: 490px) {
+
+.intro{
+    text-align: center;
+    padding: 2em;
+}
+}

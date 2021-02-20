@@ -1,0 +1,39 @@
+/*main scss for styling project*/
+/*images styling layout*/
+@media only screen and (max-width: 490px) {
+  .banner {
+    background-image: url("images/desertimg.png");
+    position: fixed;
+    opacity: .5;
+  }
+  h1 ::before {
+    content: url("images/desertlogo.jpg");
+    position: fixed;
+    max-width: 15%;
+  }
+}
+
+/*.logo1{
+    border: transparent;
+    border-radius: 50%;
+    max-width: 10%;
+    position: fixed;
+}
+
+.desert1{
+    margin-left: 50%;
+    opacity: .5;
+    position: fixed;
+}*/
+/*side bar styling layout*/
+/*media screen*/
+/*content style page layout*/
+/*Large*/
+/*Small*/
+@media only screen and (max-width: 490px) {
+  .intro {
+    text-align: center;
+    padding: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
