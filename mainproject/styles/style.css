@@ -1,4 +1,16 @@
+@charset "UTF-8";
 /*main scss for styling project*/
+/*content style page layout*/
+/*Large*/
+/*Small*/
+@media only screen and (max-width: 490px) {
+  .intro {
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+/*media screen*/
 /*images styling layout*/
 @media only screen and (max-width: 490px) {
   .banner {
@@ -26,14 +38,85 @@
     position: fixed;
 }*/
 /*side bar styling layout*/
-/*media screen*/
-/*content style page layout*/
-/*Large*/
-/*Small*/
-@media only screen and (max-width: 490px) {
-  .intro {
-    text-align: center;
-    padding: 2em;
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  left: -50vw;
+  top: 0;
+  width: 70vw;
+  height: 10vh;
+}
+
+.sidebar::after {
+  content: "≡";
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #F29040;
+  position: fixed;
+  left: 0vw;
+  top: 0;
+  pointer-events: none;
+  width: 15vw;
+  text-align: center;
+  padding-right: .5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media only screen and (min-width: 650px) {
+  .sidebar {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar::after {
+    display: none;
+  }
+}
+
+.sidebar:hover {
+  position: fixed;
+  left: 50vw;
+  width: 0;
+  height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sidebar:hover::after {
+  content: "X";
+  cursor: pointer;
+  font-size: 5vh;
+  padding: 0 2vw;
+  border-radius: 1em;
+  color: #A23216;
+  background-color: rgba(250, 250, 250, 0.5);
+  position: absolute;
+  left: 38vw;
+  top: 1vh;
+  pointer-events: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+@media only screen and (min-width: 650px) {
+  .sidebar:hover {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar:hover::after {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
