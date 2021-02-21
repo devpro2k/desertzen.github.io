@@ -1,1 +1,72 @@
 /*side bar styling layout*/
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -50vw;
+    top: 0;
+    width: 70vw;
+    height: 10vh;
+  
+    &::after {
+      content: "≡";
+      cursor: pointer;
+      font-size: 2.5em;
+      color: $orange;
+      position: fixed;
+      left: 0vw;
+      top: 0;
+      pointer-events: none;
+      width: 15vw;
+      text-align: center;
+      padding-right: .5em;
+      transition: .5s;
+    }
+  
+    @include MQ(M) {
+      max-width: 30vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+  
+      &::after {
+        display: none;
+      }
+    }
+  }
+  
+  .sidebar:hover {
+    position: fixed;
+    left: 50vw;
+    width: 0;
+    height: 100vh;
+    transition: 1s;
+  
+    &::after {
+      content: "X";
+      cursor: pointer;
+      font-size: 5vh;
+      padding: 0 2vw;
+      border-radius: 1em;
+      color:$red;
+      background-color: rgba(250, 250, 250, 0.5);
+      position: absolute;
+      left: 38vw;
+      top: 1vh;
+      pointer-events: none;
+      width: fit-content;
+      text-align: center;
+    }
+  
+    @include MQ(M) {
+      max-width: 30vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+  
+      &::after {
+        display: none;
+      }
+    }
+  }
