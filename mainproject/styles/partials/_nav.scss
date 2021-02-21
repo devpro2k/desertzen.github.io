@@ -1,5 +1,9 @@
 /*side bar styling layout*/
 
+nav{
+    background-color: $blue;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -8,7 +12,7 @@
     top: 0;
     width: 70vw;
     height: 10vh;
-    background-color: $blue;
+    
   
     &::after {
       content: "≡";

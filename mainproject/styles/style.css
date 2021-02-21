@@ -38,6 +38,10 @@
     position: fixed;
 }*/
 /*side bar styling layout*/
+nav {
+  background-color: #8FBACC;
+}
+
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +61,7 @@
   content: "≡";
   cursor: pointer;
   font-size: 2.5em;
-  color: #F29040;
+  color: #F7EAC9;
   position: fixed;
   left: 0vw;
   top: 0;
@@ -97,7 +101,7 @@
   padding: 0 2vw;
   border-radius: 1em;
   color: #A23216;
-  background-color: rgba(250, 250, 250, 0.5);
+  background-color: #F7EAC9;
   position: absolute;
   left: 38vw;
   top: 1vh;
