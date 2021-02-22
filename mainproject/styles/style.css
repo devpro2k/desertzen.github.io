@@ -38,8 +38,15 @@
     position: fixed;
 }*/
 /*side bar styling layout*/
-nav {
-  background-color: #8FBACC;
+.wrapper {
+  background-color: #A23216;
+  width: 88%;
+  padding-left: 5vw;
+}
+
+.wrapper ul {
+  list-style-type: none;
+  padding-left: 5vw;
 }
 
 .sidebar {
@@ -51,9 +58,11 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  left: -155vw;
   top: 0;
-  width: 70vw;
-  height: 10vh;
+  width: 170vw;
+  height: 50px;
+  background-color: lightgreen;
 }
 
 .sidebar::after {
@@ -86,11 +95,23 @@ nav {
 
 .sidebar:hover {
   position: fixed;
-  left: 50vw;
-  width: 0;
+  left: 0;
+  width: 80vw;
   height: 100vh;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.sidebar:hover::before {
+  content: "";
+  background-color: lightsalmon;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 62%;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .sidebar:hover::after {
@@ -102,7 +123,7 @@ nav {
   color: #000000;
   background-color: #F7EAC9;
   position: absolute;
-  left: 38vw;
+  left: 85vw;
   top: 1vh;
   pointer-events: none;
   width: -webkit-fit-content;
