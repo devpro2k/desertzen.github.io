@@ -6,7 +6,7 @@
 @media only screen and (max-width: 490px) {
   .intro {
     text-align: center;
-    padding: 1em;
+    padding: 2em;
   }
 }
 
@@ -51,7 +51,6 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  left: -50vw;
   top: 0;
   width: 70vw;
   height: 10vh;
@@ -61,7 +60,7 @@ nav {
   content: "≡";
   cursor: pointer;
   font-size: 2.5em;
-  color: #F7EAC9;
+  color: #000000;
   position: fixed;
   left: 0vw;
   top: 0;
@@ -100,7 +99,7 @@ nav {
   font-size: 5vh;
   padding: 0 2vw;
   border-radius: 1em;
-  color: #A23216;
+  color: #000000;
   background-color: #F7EAC9;
   position: absolute;
   left: 38vw;
