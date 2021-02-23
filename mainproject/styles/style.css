@@ -2,6 +2,23 @@
 /*main scss for styling project*/
 /*content style page layout*/
 /*Large*/
+@media only screen and (max-width: 1040px) {
+  h1 {
+    text-align: center;
+    padding-top: 2em;
+  }
+  h2 {
+    padding-top: 2em;
+  }
+  .intro {
+    text-align: center;
+  }
+  section {
+    background-color: #8FBACC;
+    padding: 1em;
+  }
+}
+
 /*Small*/
 @media only screen and (max-width: 490px) {
   .intro {
@@ -11,32 +28,36 @@
 }
 
 /*media screen*/
-/*images styling layout*/
 @media only screen and (max-width: 490px) {
-  .banner {
-    background-image: url("images/desertimg.png");
-    position: fixed;
-    opacity: .5;
+  body {
+    background: url("desertimg2.png") no-repeat;
+    background-attachment: fixed, scroll;
+    background-size: 120%;
+    background-position: left;
   }
-  h1 ::before {
-    content: url("images/desertlogo.jpg");
-    position: fixed;
-    max-width: 15%;
+  .intro {
+    display: block;
+    background: url("desertlogo.jpg") no-repeat;
+    background-attachment: scroll;
+    background-size: 22%;
   }
 }
 
-/*.logo1{
-    border: transparent;
-    border-radius: 50%;
-    max-width: 10%;
-    position: fixed;
+@media only screen and (max-width: 900px) {
+  body {
+    background: url("desertimg2.png") no-repeat;
+    background-attachment: fixed, scroll;
+    background-position: right;
+    background-size: 100%;
+  }
+  .intro {
+    display: block;
+    background: url("desertlogo.jpg") no-repeat;
+    background-attachment: scroll;
+    background-size: 25%;
+  }
 }
 
-.desert1{
-    margin-left: 50%;
-    opacity: .5;
-    position: fixed;
-}*/
 /*side bar styling layout*/
 .wrapper {
   background-color: #A23216;

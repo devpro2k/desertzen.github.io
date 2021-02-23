@@ -1,32 +1,39 @@
-/*images styling layout*/
-//small
 @media only screen and (max-width: 490px) {
 
-.banner {
-    background-image: url("images/desertimg.png");
-    position: fixed;
-    opacity: .5;
-}
+    body {
+        background: url("desertimg2.png") no-repeat;
+        background-attachment: fixed, scroll;
+        background-size: 120%;
+        background-position: left;
+    }
+    
+     .intro {
+         display: block;
+         background: url("desertlogo.jpg") no-repeat;
+         background-attachment: scroll;
+         background-size: 22%;
 
- h1 ::before{
-     content: url("images/desertlogo.jpg");
-     position: fixed;
-     max-width: 15%;
- }   
+     }   
+    
+    
+    }
 
+@media only screen and (max-width: 900px){
 
-}
+    body {
+        background: url("desertimg2.png") no-repeat;
+        background-attachment: fixed, scroll;
+        background-position: right;
+        background-size: 100%;
+    }
+    
+     .intro {
+         display: block;
+         background: url("desertlogo.jpg") no-repeat;
+         background-attachment: scroll;
+         background-size: 25%;
 
-//large
-/*.logo1{
-    border: transparent;
-    border-radius: 50%;
-    max-width: 10%;
-    position: fixed;
-}
-
-.desert1{
-    margin-left: 50%;
-    opacity: .5;
-    position: fixed;
-}*/
+     }   
+    
+    
+    }
