@@ -71,22 +71,18 @@ body {
 }
 
 /*side bar styling layout*/
-nav {
-  background-color: #8FBACC;
-}
-
-nav .wrapper {
-  background-color: #A23216;
+.wrapper {
+  background-color: transparent;
   width: 88%;
   padding-left: 5vw;
 }
 
-nav .wrapper ul {
+.wrapper ul {
   list-style-type: none;
   padding-left: 5vw;
 }
 
-nav .sidebar {
+.sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,14 +97,19 @@ nav .sidebar {
   top: 0;
   width: 170vw;
   height: 50px;
-  background-color: lightgreen;
+  background-color: transparent;
 }
 
-nav .sidebar::after {
+.sidebar .design-name,
+.sidebar .designer-name {
+  color: #F7EAC9;
+}
+
+.sidebar::after {
   content: "≡";
   cursor: pointer;
   font-size: 2.5em;
-  color: #000000;
+  color: #F29040;
   position: fixed;
   left: 0vw;
   top: 0;
@@ -123,13 +124,13 @@ nav .sidebar::after {
 }
 
 @media only screen and (min-width: 35em) {
-  nav .sidebar {
+  .sidebar {
     max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
   }
-  nav .sidebar::after {
+  .sidebar::after {
     content: "≡";
     cursor: pointer;
     font-size: 2.5em;
@@ -147,19 +148,19 @@ nav .sidebar::after {
 }
 
 @media only screen and (min-width: 35em) and (min-width: 35em) {
-  nav .sidebar {
+  .sidebar {
     max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
     display: none;
   }
-  nav .sidebar::after {
+  .sidebar::after {
     display: none;
   }
 }
 
-nav .sidebar:hover {
+.sidebar:hover {
   position: fixed;
   left: 0;
   width: 80vw;
@@ -168,24 +169,23 @@ nav .sidebar:hover {
   transition: 1s;
 }
 
-nav .sidebar:hover .sidebar:hover::before {
+.sidebar:hover::before {
   content: "";
-  background-color: lightsalmon;
+  background: -webkit-gradient(linear, left top, left bottom, from(#155149), color-stop(#F29040), to(#F7EAC9));
+  background: linear-gradient(#155149, #F29040, #F7EAC9);
   position: fixed;
-  left: 50vw;
-  width: 0;
-  height: 100vh;
+  left: 60vw;
   -webkit-transition: 1s;
   transition: 1s;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 62%;
+  width: 97vw;
+  height: 60%;
   pointer-events: none;
   z-index: -1;
 }
 
-nav .sidebar:hover .sidebar:hover::after {
+.sidebar:hover::after {
   content: "X";
   cursor: pointer;
   font-size: 5vh;
@@ -204,13 +204,13 @@ nav .sidebar:hover .sidebar:hover::after {
 }
 
 @media only screen and (min-width: 35em) {
-  nav .sidebar:hover .sidebar:hover {
+  .sidebar:hover {
     max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
   }
-  nav .sidebar:hover .sidebar:hover::after {
+  .sidebar:hover::after {
     content: "X";
     cursor: pointer;
     font-size: 5vh;
@@ -230,14 +230,14 @@ nav .sidebar:hover .sidebar:hover::after {
 }
 
 @media only screen and (min-width: 35em) and (min-width: 35em) {
-  nav .sidebar:hover .sidebar:hover {
+  .sidebar:hover {
     max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
     display: none;
   }
-  nav .sidebar:hover .sidebar:hover::after {
+  .sidebar:hover::after {
     display: none;
   }
 }

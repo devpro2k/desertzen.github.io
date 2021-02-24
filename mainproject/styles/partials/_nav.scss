@@ -1,33 +1,59 @@
 /*side bar styling layout*/
+.wrapper {
+  //this will be used for the final results
+  background-color: transparent;
+  width: 88%;
+  padding-left: 5vw;
 
-nav {
-  background-color: $blue;
-
-  .wrapper {
-    //this will be used for the final results
-    background-color: $red;
-    width: 88%;
+  ul {
+    list-style-type: none;
     padding-left: 5vw;
-
-    ul {
-      list-style-type: none;
-      padding-left: 5vw;
-    }
-
   }
 
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: -155vw;
+  top: 0;
+  width: 170vw;
+  height: 50px;
+  // used for testing purposes
+  background-color: transparent;
+
+  .design-name,
+  .designer-name {
+    color: $cream;
+  }
+
+  &::after {
+    content: "≡";
+    cursor: pointer;
+    font-size: 2.5em;
+    color: $orange;
     position: fixed;
-    left: -155vw;
+    left: 0vw;
     top: 0;
-    width: 170vw;
-    height: 50px;
-    // used for testing purposes
-    background-color: lightgreen;
+    width: 70vw;
+    height: 10vh;
+
+
+    pointer-events: none;
+    width: 15vw;
+    text-align: center;
+    padding-right: .5em;
+    transition: .5s;
+  }
+
+  @include MQ(M) {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     &::after {
       content: "≡";
@@ -35,13 +61,8 @@ nav {
       font-size: 2.5em;
       color: $black;
       position: fixed;
-      //left: -50vw;
       left: 0vw;
       top: 0;
-      width: 70vw;
-      height: 10vh;
-
-
       pointer-events: none;
       width: 15vw;
       text-align: center;
@@ -56,111 +77,85 @@ nav {
       top: 0;
 
       &::after {
-        content: "≡";
-        cursor: pointer;
-        font-size: 2.5em;
-        color: $black;
-        position: fixed;
-        left: 0vw;
-        top: 0;
-        pointer-events: none;
-        width: 15vw;
-        text-align: center;
-        padding-right: .5em;
-        transition: .5s;
-      }
-
-      @include MQ(M) {
-        max-width: 30vw;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        &::after {
-          display: none;
-        }
-
         display: none;
       }
+
+      display: none;
     }
   }
+}
 
-  .sidebar:hover {
+.sidebar:hover {
+  position: fixed;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  transition: 1s;
+
+
+  &::before {
+    content: "";
+    background: linear-gradient($green, $orange, $cream);
     position: fixed;
-    left: 0;
-    width: 80vw;
-    height: 100vh;
+    left: 60vw;
     transition: 1s;
+    left: 0;
+    top: 0;
+    width: 97vw;
+    height: 60%;
+    pointer-events: none;
+    z-index: -1;
+  }
 
-    .sidebar:hover {
-      &::before {
-        content: "";
-        background-color: lightsalmon;
-        position: fixed;
-        left: 50vw;
-        width: 0;
-        height: 100vh;
-        transition: 1s;
+  &::after {
+    content: "X";
+    cursor: pointer;
+    font-size: 5vh;
+    padding: 0 2vw;
+    border-radius: 1em;
+    color: $black;
+    background-color: $cream;
+    position: absolute;
+    left: 85vw;
+    top: 1vh;
+    pointer-events: none;
+    width: fit-content;
+    text-align: center;
+  }
 
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 62%;
-        pointer-events: none;
-        z-index: -1;
-      }
+  @include MQ(M) {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &::after {
+      content: "X";
+      cursor: pointer;
+      font-size: 5vh;
+      padding: 0 2vw;
+      border-radius: 1em;
+      color: $black;
+      background-color: $cream;
+      position: absolute;
+      left: 38vw;
+      top: 1vh;
+      pointer-events: none;
+      width: fit-content;
+      text-align: center;
+    }
+
+    @include MQ(M) {
+      max-width: 30vw;
+      position: absolute;
+      left: 0;
+      top: 0;
 
       &::after {
-        content: "X";
-        cursor: pointer;
-        font-size: 5vh;
-        padding: 0 2vw;
-        border-radius: 1em;
-        color: $black;
-        background-color: $cream;
-        position: absolute;
-        left: 85vw;
-        top: 1vh;
-        pointer-events: none;
-        width: fit-content;
-        text-align: center;
+        display: none;
       }
 
-      @include MQ(M) {
-        max-width: 30vw;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        &::after {
-          content: "X";
-          cursor: pointer;
-          font-size: 5vh;
-          padding: 0 2vw;
-          border-radius: 1em;
-          color: $black;
-          background-color: $cream;
-          position: absolute;
-          left: 38vw;
-          top: 1vh;
-          pointer-events: none;
-          width: fit-content;
-          text-align: center;
-        }
-
-        @include MQ(M) {
-          max-width: 30vw;
-          position: absolute;
-          left: 0;
-          top: 0;
-
-          &::after {
-            display: none;
-          }
-
-          display: none;
-        }
-      }
+      display: none;
     }
   }
 }
