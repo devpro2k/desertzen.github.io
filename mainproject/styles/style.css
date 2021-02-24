@@ -1,19 +1,9 @@
 @charset "UTF-8";
 /*main scss for styling project*/
 /*content style page layout*/
-/*Large*/
+/*Small*/
 body {
-  max-width: 750px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  max-width: 150vw;
 }
 
 h1 {
@@ -34,20 +24,21 @@ section {
   padding: 1em;
 }
 
-/*Small*/
-@media only screen and (max-width: 490px) {
-  .intro {
+/*Medium*/
+/*@include MQ(M) {
+
+.intro{
     text-align: center;
     padding: 2em;
-  }
 }
-
+}*/
+/*Large*/
 /*media screen*/
 body {
   background: url("desertimg2.png") no-repeat;
-  background-attachment: fixed, scroll;
+  background-attachment: absolute, scroll;
   background-size: 120%;
-  background-position: left;
+  background-position: center;
 }
 
 .intro {
@@ -123,19 +114,7 @@ body {
   transition: .5s;
 }
 
-@media only screen and (min-width: 35em) {
-  .sidebar {
-    max-width: 30vw;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .sidebar::after {
-    display: none;
-  }
-}
-
-.sidebar:hover {
+.sidebar .sidebar:hover {
   position: fixed;
   left: 0;
   width: 80vw;
@@ -144,7 +123,7 @@ body {
   transition: 1s;
 }
 
-.sidebar:hover::before {
+.sidebar .sidebar:hover::before {
   content: "";
   background-color: lightsalmon;
   position: fixed;
@@ -156,7 +135,7 @@ body {
   z-index: -1;
 }
 
-.sidebar:hover::after {
+.sidebar .sidebar:hover::after {
   content: "X";
   cursor: pointer;
   font-size: 5vh;
@@ -175,13 +154,13 @@ body {
 }
 
 @media only screen and (min-width: 35em) {
-  .sidebar:hover {
+  .sidebar .sidebar:hover {
     max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
   }
-  .sidebar:hover::after {
+  .sidebar .sidebar:hover::after {
     display: none;
   }
 }

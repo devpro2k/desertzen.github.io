@@ -1,10 +1,7 @@
 /*content style page layout*/
 /*Small*/
 body{
-    max-width: 750px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    max-width: 150vw;
 
 }
 h1{
@@ -25,11 +22,11 @@ section {
 
 
 /*Medium*/
-@include MQ(M) {
+/*@include MQ(M) {
 
 .intro{
     text-align: center;
     padding: 2em;
 }
-}
+}*/
 /*Large*/
