@@ -2,21 +2,22 @@
 /*main scss for styling project*/
 /*content style page layout*/
 /*Large*/
-@media only screen and (max-width: 1040px) {
-  h1 {
-    text-align: center;
-    padding-top: 2em;
-  }
-  h2 {
-    padding-top: 2em;
-  }
-  .intro {
-    text-align: center;
-  }
-  section {
-    background-color: #8FBACC;
-    padding: 1em;
-  }
+h1 {
+  text-align: center;
+  padding-top: 2em;
+}
+
+h2 {
+  padding-top: 2em;
+}
+
+.intro {
+  text-align: center;
+}
+
+section {
+  background-color: #8FBACC;
+  padding: 1em;
 }
 
 /*Small*/
@@ -43,7 +44,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   body {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
