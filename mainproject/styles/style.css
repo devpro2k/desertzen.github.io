@@ -2,13 +2,27 @@
 /*main scss for styling project*/
 /*content style page layout*/
 /*Large*/
+body {
+  max-width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 h1 {
   text-align: center;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 h2 {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .intro {
@@ -29,34 +43,40 @@ section {
 }
 
 /*media screen*/
-@media only screen and (max-width: 490px) {
-  body {
-    background: url("desertimg2.png") no-repeat;
-    background-attachment: fixed, scroll;
-    background-size: 120%;
-    background-position: left;
-  }
-  .intro {
-    display: block;
-    background: url("desertlogo.jpg") no-repeat;
-    background-attachment: scroll;
-    background-size: 22%;
-  }
+body {
+  background: url("desertimg2.png") no-repeat;
+  background-attachment: fixed, scroll;
+  background-size: 120%;
+  background-position: left;
 }
 
-@media only screen and (max-width: 1200px) {
+.intro {
+  display: block;
+  background: url("desertlogo.jpg") no-repeat;
+  background-attachment: scroll;
+  background-size: 22%;
+}
+
+@media only screen and (min-width: 64em) {
   body {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
-    background-size: 100%;
+    background-size: 75%;
   }
   .intro {
     display: block;
     background: url("desertlogo.jpg") no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed, scroll;
     background-size: 25%;
   }
+}
+
+body {
+  background: url("desertimg2.png") no-repeat;
+  background-attachment: fixed, scroll;
+  background-position: right;
+  background-size: 75%;
 }
 
 /*side bar styling layout*/
@@ -103,7 +123,7 @@ section {
   transition: .5s;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 35em) {
   .sidebar {
     max-width: 30vw;
     position: absolute;
@@ -154,7 +174,7 @@ section {
   text-align: center;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 35em) {
   .sidebar:hover {
     max-width: 30vw;
     position: absolute;

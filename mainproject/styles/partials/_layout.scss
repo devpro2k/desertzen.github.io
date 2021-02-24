@@ -1,12 +1,19 @@
 /*content style page layout*/
-/*Large*/
+/*Small*/
+body{
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
 h1{
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 h2{
-    padding-top: 2em;
+    padding-top: 1em;
 }
 .intro {
     text-align: center;
@@ -17,11 +24,12 @@ section {
 }
 
 
-/*Small*/
-@media only screen and (max-width: 490px) {
+/*Medium*/
+@include MQ(M) {
 
 .intro{
     text-align: center;
     padding: 2em;
 }
 }
+/*Large*/
