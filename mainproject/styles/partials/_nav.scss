@@ -10,7 +10,7 @@
     list-style-type: none;
     padding-left: 5vw;
   }
-  
+
 }
 
 .sidebar {
@@ -40,60 +40,50 @@
     transition: .5s;
   }
 
-  @include MQ(M) {
-    max-width: 30vw;
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    &::after {
-      display: none;
-    }
-  }
-}
-
-.sidebar:hover {
-  position: fixed;
-  left: 0;
-  width: 80vw;
-  height: 100vh;
-  transition: 1s;
-  
-  &::before{
-    content: "";
-    background-color: lightsalmon;
+  .sidebar:hover {
     position: fixed;
     left: 0;
-    top: 0;
-    width: 100vw;
-    height: 62%;
-    pointer-events: none;
-    z-index: -1;
-  }
-  &::after {
-    content: "X";
-    cursor: pointer;
-    font-size: 5vh;
-    padding: 0 2vw;
-    border-radius: 1em;
-    color: $black;
-    background-color: $cream;
-    position: absolute;
-    left: 85vw;
-    top: 1vh;
-    pointer-events: none;
-    width: fit-content;
-    text-align: center;
-  }
+    width: 80vw;
+    height: 100vh;
+    transition: 1s;
 
-  @include MQ(M) {
-    max-width: 30vw;
-    position: absolute;
-    left: 0;
-    top: 0;
+    &::before {
+      content: "";
+      background-color: lightsalmon;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 62%;
+      pointer-events: none;
+      z-index: -1;
+    }
 
     &::after {
-      display: none;
+      content: "X";
+      cursor: pointer;
+      font-size: 5vh;
+      padding: 0 2vw;
+      border-radius: 1em;
+      color: $black;
+      background-color: $cream;
+      position: absolute;
+      left: 85vw;
+      top: 1vh;
+      pointer-events: none;
+      width: fit-content;
+      text-align: center;
+    }
+
+    @include MQ(M) {
+      max-width: 30vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
