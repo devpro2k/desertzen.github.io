@@ -71,18 +71,22 @@ body {
 }
 
 /*side bar styling layout*/
-.wrapper {
+nav {
+  background-color: #8FBACC;
+}
+
+nav .wrapper {
   background-color: #A23216;
   width: 88%;
   padding-left: 5vw;
 }
 
-.wrapper ul {
+nav .wrapper ul {
   list-style-type: none;
   padding-left: 5vw;
 }
 
-.sidebar {
+nav .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +94,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   left: -155vw;
   top: 0;
@@ -98,7 +104,7 @@ body {
   background-color: lightgreen;
 }
 
-.sidebar::after {
+nav .sidebar::after {
   content: "≡";
   cursor: pointer;
   font-size: 2.5em;
@@ -106,6 +112,8 @@ body {
   position: fixed;
   left: 0vw;
   top: 0;
+  width: 70vw;
+  height: 10vh;
   pointer-events: none;
   width: 15vw;
   text-align: center;
@@ -114,7 +122,44 @@ body {
   transition: .5s;
 }
 
-.sidebar .sidebar:hover {
+@media only screen and (min-width: 35em) {
+  nav .sidebar {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  nav .sidebar::after {
+    content: "≡";
+    cursor: pointer;
+    font-size: 2.5em;
+    color: #000000;
+    position: fixed;
+    left: 0vw;
+    top: 0;
+    pointer-events: none;
+    width: 15vw;
+    text-align: center;
+    padding-right: .5em;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+@media only screen and (min-width: 35em) and (min-width: 35em) {
+  nav .sidebar {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  nav .sidebar::after {
+    display: none;
+  }
+}
+
+nav .sidebar:hover {
   position: fixed;
   left: 0;
   width: 80vw;
@@ -123,10 +168,15 @@ body {
   transition: 1s;
 }
 
-.sidebar .sidebar:hover::before {
+nav .sidebar:hover .sidebar:hover::before {
   content: "";
   background-color: lightsalmon;
   position: fixed;
+  left: 50vw;
+  width: 0;
+  height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
   left: 0;
   top: 0;
   width: 100vw;
@@ -135,7 +185,7 @@ body {
   z-index: -1;
 }
 
-.sidebar .sidebar:hover::after {
+nav .sidebar:hover .sidebar:hover::after {
   content: "X";
   cursor: pointer;
   font-size: 5vh;
@@ -154,13 +204,40 @@ body {
 }
 
 @media only screen and (min-width: 35em) {
-  .sidebar .sidebar:hover {
+  nav .sidebar:hover .sidebar:hover {
     max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
   }
-  .sidebar .sidebar:hover::after {
+  nav .sidebar:hover .sidebar:hover::after {
+    content: "X";
+    cursor: pointer;
+    font-size: 5vh;
+    padding: 0 2vw;
+    border-radius: 1em;
+    color: #000000;
+    background-color: #F7EAC9;
+    position: absolute;
+    left: 38vw;
+    top: 1vh;
+    pointer-events: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 35em) and (min-width: 35em) {
+  nav .sidebar:hover .sidebar:hover {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  nav .sidebar:hover .sidebar:hover::after {
     display: none;
   }
 }
