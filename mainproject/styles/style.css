@@ -8,7 +8,7 @@ body {
 
 h1 {
   text-align: center;
-  padding-top: 1em;
+  padding-top: 3em;
 }
 
 h2 {
@@ -19,33 +19,25 @@ h2 {
   text-align: center;
 }
 
-section {
-  background-color: #8FBACC;
-  padding: 1em;
-}
-
-/*Medium*/
-/*@include MQ(M) {
-
-.intro{
-    text-align: center;
-    padding: 2em;
-}
-}*/
 /*Large*/
+@media only screen and (min-width: 64em) {
+  h1 {
+    padding-top: 6em;
+  }
+}
+
 /*media screen*/
 body {
   background: url("desertimg2.png") no-repeat;
   background-attachment: absolute, scroll;
   background-size: 120%;
-  background-position: center;
+  background-position: right;
 }
 
-.intro {
-  display: block;
-  background: url("desertlogo.jpg") no-repeat;
-  background-attachment: scroll;
-  background-size: 22%;
+h1 {
+  background: url("/styles/desertlogo2.JPG") no-repeat;
+  background-position: center;
+  background-size: 50%;
 }
 
 @media only screen and (min-width: 64em) {
@@ -55,10 +47,10 @@ body {
     background-position: right;
     background-size: 75%;
   }
-  .intro {
+  h1 {
     display: block;
-    background: url("desertlogo.jpg") no-repeat;
-    background-attachment: fixed, scroll;
+    background: url("/styles/desertlogo2.JPG") no-repeat;
+    background-position: center;
     background-size: 25%;
   }
 }

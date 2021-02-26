@@ -2,15 +2,13 @@
         background: url("desertimg2.png") no-repeat;
         background-attachment: absolute, scroll;
         background-size: 120%;
-        background-position: center;
+        background-position: right;
     }
     
-     .intro {
-         display: block;
-         background: url("desertlogo.jpg") no-repeat;
-         background-attachment: scroll;
-         background-size: 22%;
-
+     h1 {
+         background: url("/styles/desertlogo2.JPG") no-repeat;
+         background-position: center;
+         background-size: 50%;
      }   
 
 @include MQ(L){
@@ -22,10 +20,10 @@
         background-size: 75%;
     }
     
-     .intro {
+     h1 {
          display: block;
-         background: url("desertlogo.jpg") no-repeat;
-         background-attachment: fixed, scroll;
+         background: url("/styles/desertlogo2.JPG") no-repeat;
+         background-position: center;
          background-size: 25%;
 
      }   
