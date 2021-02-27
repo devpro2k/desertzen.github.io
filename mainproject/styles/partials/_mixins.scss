@@ -1,4 +1,7 @@
 /*media screen*/
+$S: 32em;
+$M: 52em;
+$L: 64em;
 
 @mixin MQ($size) {
   @if $size==S {

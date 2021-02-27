@@ -138,7 +138,7 @@ h1 {
   transition: .5s;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 52em) {
   .sidebar {
     max-width: 30vw;
     position: absolute;
@@ -162,7 +162,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 35em) and (min-width: 35em) {
+@media only screen and (min-width: 52em) and (min-width: 52em) {
   .sidebar {
     max-width: 30vw;
     position: absolute;
@@ -217,7 +217,7 @@ h1 {
   text-align: center;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 52em) {
   .sidebar:hover {
     max-width: 30vw;
     position: absolute;
@@ -243,7 +243,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 35em) and (min-width: 35em) {
+@media only screen and (min-width: 52em) and (min-width: 52em) {
   .sidebar:hover {
     max-width: 30vw;
     position: absolute;
