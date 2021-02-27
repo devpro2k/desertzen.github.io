@@ -24,9 +24,26 @@ h2 {
   body {
     max-width: 64em;
     float: right;
+    padding: 2em;
   }
   h1 {
     padding-top: 6em;
+  }
+  h2, h3 {
+    font-size: 18px;
+    border: 5px solid #8FBACC;
+    border-radius: 5px;
+    width: 24em;
+    height: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    -webkit-transform: skew(-30deg);
+            transform: skew(-30deg);
+    padding: 1em;
+  }
+  div {
+    padding: 0 1.5em 0 1.5em;
   }
 }
 
@@ -55,7 +72,7 @@ h1 {
     display: block;
     background: url("/styles/desertlogo2.JPG") no-repeat;
     background-position: center;
-    background-size: 25%;
+    background-size: 35%;
   }
 }
 
@@ -89,9 +106,18 @@ h1 {
   background-color: transparent;
 }
 
+.sidebar .design-selection li,
 .sidebar .design-name,
-.sidebar .designer-name {
+.sidebar .designer-name,
+.sidebar .design-archives a,
+.sidebar .zen-resources a {
   color: #F7EAC9;
+  text-decoration: none;
+  padding: .05em;
+}
+
+.sidebar h3 {
+  color: #ffd900;
 }
 
 .sidebar::after {
@@ -160,8 +186,8 @@ h1 {
 
 .sidebar:hover::before {
   content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(#155149), color-stop(#F29040), to(#F7EAC9));
-  background: linear-gradient(#155149, #F29040, #F7EAC9);
+  background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
+  background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
   position: fixed;
   left: 60vw;
   -webkit-transition: 1s;
@@ -169,7 +195,7 @@ h1 {
   left: 0;
   top: 0;
   width: 97vw;
-  height: 60%;
+  height: 100%;
   pointer-events: none;
   z-index: -1;
 }

@@ -25,9 +25,18 @@
   // used for testing purposes
   background-color: transparent;
 
+  .design-selection li,
   .design-name,
-  .designer-name {
+  .designer-name, 
+  .design-archives a, 
+  .zen-resources a {
     color: $cream;
+    text-decoration: none;
+    padding: .05em;
+  }
+
+  h3 {
+    color: rgb(255, 217, 0);
   }
 
   &::after {
@@ -95,14 +104,14 @@
 
   &::before {
     content: "";
-    background: linear-gradient($green, $orange, $cream);
+    background: linear-gradient(to top right, $green, $red, $orange, $blue 85%,);
     position: fixed;
     left: 60vw;
     transition: 1s;
     left: 0;
     top: 0;
     width: 97vw;
-    height: 60%;
+    height: 100%;
     pointer-events: none;
     z-index: -1;
   }
