@@ -249,7 +249,6 @@ h1 {
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
   }
   .sidebar:hover::after {
     display: none;
