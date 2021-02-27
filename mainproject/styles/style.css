@@ -1,18 +1,51 @@
 @charset "UTF-8";
 /*main scss for styling project*/
 /*content style page layout*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
 /*Small*/
 body {
   max-width: 150vw;
 }
 
 h1 {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   padding-top: 3em;
 }
 
 h2 {
   padding-top: 1em;
+}
+
+h2, .summary h3,
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  border: 5px solid #8FBACC;
+  border-radius: 5px;
+  width: 24em;
+  height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -webkit-transform: skew(-30deg);
+          transform: skew(-30deg);
+  padding: 1em;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+div {
+  padding: 0 1.5em 0 1.5em;
 }
 
 .intro {
@@ -28,22 +61,6 @@ h2 {
   }
   h1 {
     padding-top: 6em;
-  }
-  h2, h3 {
-    font-size: 18px;
-    border: 5px solid #8FBACC;
-    border-radius: 5px;
-    width: 24em;
-    height: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-    padding: 1em;
-  }
-  div {
-    padding: 0 1.5em 0 1.5em;
   }
 }
 
