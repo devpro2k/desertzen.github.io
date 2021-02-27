@@ -1,9 +1,9 @@
-    body {
-        background: url("desertimg2.png") no-repeat;
-        background-attachment: absolute, scroll;
-        background-size: 120%;
-        background-position: right;
-    }
+body {
+    background: url("desertimg2.png") no-repeat;
+    background-attachment: fixed, scroll;
+    background-position: right;
+    background-size: 100%;
+}
     
      h1 {
          background: url("/styles/desertlogo2.JPG") no-repeat;
@@ -17,7 +17,7 @@
         background: url("desertimg2.png") no-repeat;
         background-attachment: fixed, scroll;
         background-position: right;
-        background-size: 75%;
+        background-size: 50%;
     }
     
      h1 {
@@ -27,14 +27,4 @@
          background-size: 25%;
 
      }   
-    
-    
-    }
-
-    //desktop
-    body {
-        background: url("desertimg2.png") no-repeat;
-        background-attachment: fixed, scroll;
-        background-position: right;
-        background-size: 75%;
     }

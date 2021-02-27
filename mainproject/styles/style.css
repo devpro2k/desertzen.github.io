@@ -21,6 +21,10 @@ h2 {
 
 /*Large*/
 @media only screen and (min-width: 64em) {
+  body {
+    max-width: 64em;
+    float: right;
+  }
   h1 {
     padding-top: 6em;
   }
@@ -29,9 +33,9 @@ h2 {
 /*media screen*/
 body {
   background: url("desertimg2.png") no-repeat;
-  background-attachment: absolute, scroll;
-  background-size: 120%;
+  background-attachment: fixed, scroll;
   background-position: right;
+  background-size: 100%;
 }
 
 h1 {
@@ -45,7 +49,7 @@ h1 {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
-    background-size: 75%;
+    background-size: 50%;
   }
   h1 {
     display: block;
@@ -53,13 +57,6 @@ h1 {
     background-position: center;
     background-size: 25%;
   }
-}
-
-body {
-  background: url("desertimg2.png") no-repeat;
-  background-attachment: fixed, scroll;
-  background-position: right;
-  background-size: 75%;
 }
 
 /*side bar styling layout*/
