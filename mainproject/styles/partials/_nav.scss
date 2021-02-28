@@ -194,6 +194,9 @@
 }
 
 @include MQ(M) {
+  .wrapper {
+    width: 25vw;
+    margin-left: -5vw;
   .sidebar {
     background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
     height: 100%;
@@ -208,4 +211,5 @@
     }
   }
 
+}
 }

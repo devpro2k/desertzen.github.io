@@ -308,15 +308,19 @@ h1 {
 }
 
 @media only screen and (min-width: 52em) {
-  .sidebar {
+  .wrapper {
+    width: 25vw;
+    margin-left: -5vw;
+  }
+  .wrapper .sidebar {
     background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
     background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
     height: 100%;
   }
-  .sidebar:hover {
+  .wrapper .sidebar:hover {
     pointer-events: none;
   }
-  .sidebar:hover::before {
+  .wrapper .sidebar:hover::before {
     content: "";
     background: transparent;
   }
