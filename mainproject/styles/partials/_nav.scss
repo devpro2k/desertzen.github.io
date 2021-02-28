@@ -170,13 +170,23 @@
 
 @include MQ(L) {
   .wrapper {
+<<<<<<< HEAD
     width: 20vw;
+=======
+    width: 25vw;
+>>>>>>> f5584187b9a5585ea5a34ae2844920c96372f7b4
     margin-left: -5vw;
-  }
+
     .sidebar {
       background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
       height: 100%;
+<<<<<<< HEAD
       width: 20%;
+=======
+      width: 5vw;
+
+      
+>>>>>>> f5584187b9a5585ea5a34ae2844920c96372f7b4
     }
 
     .sidebar:hover {
@@ -189,7 +199,12 @@
     }
   }
 
-/*@include MQ(M) {
+}
+
+@include MQ(M) {
+  .wrapper {
+    width: 25vw;
+    margin-left: -5vw;
   .sidebar {
     background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
     height: 100%;
@@ -203,4 +218,6 @@
       background: transparent;
     }
   }
-}*/
+
+}
+}
