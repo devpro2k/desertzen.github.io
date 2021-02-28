@@ -133,7 +133,7 @@ h1 {
   position: fixed;
   left: -155vw;
   top: 0;
-  width: 180vw;
+  width: 170vw;
   height: 50px;
   background-color: transparent;
 }
@@ -170,7 +170,7 @@ h1 {
   transition: .5s;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 32em) {
   .sidebar {
     max-width: 30vw;
     position: absolute;
@@ -194,7 +194,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 52em) and (min-width: 52em) {
+@media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar {
     max-width: 30vw;
     position: absolute;
@@ -249,7 +249,7 @@ h1 {
   text-align: center;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 32em) {
   .sidebar:hover {
     max-width: 30vw;
     position: absolute;
@@ -275,7 +275,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 52em) and (min-width: 52em) {
+@media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar:hover {
     max-width: 30vw;
     position: absolute;
@@ -284,6 +284,41 @@ h1 {
   }
   .sidebar:hover::after {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .wrapper {
+    width: 30vw;
+    margin-left: -5vw;
+  }
+  .wrapper .sidebar {
+    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
+    background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
+    height: 100%;
+    width: 5vw;
+  }
+  .wrapper .sidebar:hover {
+    pointer-events: none;
+  }
+  .wrapper .sidebar:hover::before {
+    content: "";
+    background: transparent;
+  }
+}
+
+@media only screen and (min-width: 52em) {
+  .sidebar {
+    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
+    background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
+    height: 100%;
+  }
+  .sidebar:hover {
+    pointer-events: none;
+  }
+  .sidebar:hover::before {
+    content: "";
+    background: transparent;
   }
 }
 /*# sourceMappingURL=style.css.map */
