@@ -192,7 +192,7 @@
 
 }
 
-@include MQ(M) {
+/*@include MQ(M) {
   .sidebar {
     background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
     height: 100%;
@@ -206,4 +206,4 @@
       background: transparent;
     }
   }
-}
+}*/

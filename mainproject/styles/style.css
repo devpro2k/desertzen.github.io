@@ -307,18 +307,19 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 52em) {
+/*@include MQ(M) {
   .sidebar {
-    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
-    background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
+    background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
     height: 100%;
   }
+
   .sidebar:hover {
     pointer-events: none;
+
+    &::before {
+      content: "";
+      background: transparent;
+    }
   }
-  .sidebar:hover::before {
-    content: "";
-    background: transparent;
-  }
-}
+}*/
 /*# sourceMappingURL=style.css.map */
