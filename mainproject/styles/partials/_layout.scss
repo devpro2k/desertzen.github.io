@@ -1,15 +1,17 @@
 /*content style page layout*/
 @import "colors";
 @import "fonts";
+
+@media only screen and (min-width: 20em){
 /*Small*/
 body{
-    max-width: 200vw;
+    float: right;
 }
 
 h1{
     font-family: $primary;
     text-align: center;
-    padding-top: 3em;
+    padding-top: 6em;
 }
 
 h2, .summary h3, 
@@ -22,7 +24,7 @@ h2, .summary h3,
     font-family: $header;
     border: 5px solid $blue;
     border-radius: 5px;
-    width: 100%;
+    width: 75%;
     height: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -41,9 +43,9 @@ p {
 .intro {
     text-align: center;
 }
-
+}
 /*Large*/
-@media only screen and (min-width: 64em){
+@media only screen and (min-width: 64em) {
 
     body {
         max-width: 64em;
@@ -65,7 +67,7 @@ p {
         font-family: $header;
         border: 5px solid $blue;
         border-radius: 5px;
-        width: 24em;
+        width: 100%;
         height: 1em;
         margin-left: auto;
         margin-right: auto;

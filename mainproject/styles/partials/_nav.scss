@@ -170,14 +170,13 @@
 
 @include MQ(L) {
   .wrapper {
-    width: 30vw;
+    width: 20vw;
     margin-left: -5vw;
   }
     .sidebar {
       background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
       height: 100%;
-      width: 5vw;
-
+      width: 20%;
     }
 
     .sidebar:hover {
