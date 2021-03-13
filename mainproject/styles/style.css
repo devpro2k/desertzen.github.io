@@ -80,13 +80,13 @@
 /*media screen*/
 @media only screen and (min-width: 20em) {
   body {
-    background: url("../desertimg2.png") no-repeat;
+    background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
     background-size: 25em;
   }
   h1 {
-    background: url("../desertlogo2.JPG") no-repeat;
+    background: url("desertlogo2.JPG") no-repeat;
     background-position: center;
     background-size: 50%;
   }
@@ -94,13 +94,13 @@
 
 @media only screen and (min-width: 32em) {
   body {
-    background: url("../desertimg2.png") no-repeat;
+    background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
     background-size: 80%;
   }
   h1 {
-    background: url("../desertlogo2.JPG") no-repeat;
+    background: url("desertlogo2.JPG") no-repeat;
     background-position: center;
     background-size: 50%;
   }
@@ -108,14 +108,14 @@
 
 @media only screen and (min-width: 64em) {
   body {
-    background: url("../desertimg2.png") no-repeat;
+    background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
     background-size: 60%;
   }
   h1 {
     display: block;
-    background: url("../desertlogo2.JPG") no-repeat;
+    background: url("desertlogo2.JPG") no-repeat;
     background-position: center;
     background-size: 30%;
   }
