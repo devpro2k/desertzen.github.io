@@ -1,48 +1,51 @@
 
+@import "colors";
+
+
 @media only screen and (min-width: 20em) {
-    body {
+    html {
         background: url("desertimg2.png") no-repeat;
         background-attachment: fixed, scroll;
-        background-position: right;
-        background-size: 25em;
+        background-position: center;
+        background-size: 175%;
     }
         
          h1 {
              background: url("desertlogo2.JPG") no-repeat;
-             background-position: center;
-             background-size: 50%;
+             background-position: .5em 0em;
+             background-size: 90%;
          }   
 }
 
 @media only screen and (min-width: 32em) {
-    body {
+    html {
         background: url("desertimg2.png") no-repeat;
         background-attachment: fixed, scroll;
-        background-position: right;
-        background-size: 80%;
+        background-position: center;
+        background-size: 150%;
     }
         
          h1 {
              background: url("desertlogo2.JPG") no-repeat;
-             background-position: center;
-             background-size: 50%;
+             background-position: 1.5em 0;
+             background-size: 80%;
          }   
 }
 
 @media only screen and (min-width: 64em) {
 
-    body {
+    html {
         background: url("desertimg2.png") no-repeat;
         background-attachment: fixed, scroll;
-        background-position: right;
-        background-size: 60%;
+        background-position: 8em 11em;
+        background-size: 100%;
     }
     
      h1 {
          display: block;
          background: url("desertlogo2.JPG") no-repeat;
-         background-position: center;
-         background-size: 30%;
+         background-position: 2em 0em;
+         background-size: 80%;
 
      }   
     }
