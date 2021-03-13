@@ -6,7 +6,7 @@
 @media only screen and (min-width: 20em) {
   /*Small*/
   body {
-    float: right;
+    padding: 1em;
   }
   h1 {
     font-family: "Oswald", sans-serif;
@@ -80,13 +80,13 @@
 /*media screen*/
 @media only screen and (min-width: 20em) {
   body {
-    background: url("desertimg2.png") no-repeat;
+    background: url("../desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
     background-size: 25em;
   }
   h1 {
-    background: url("/styles/desertlogo2.JPG") no-repeat;
+    background: url("../desertlogo2.JPG") no-repeat;
     background-position: center;
     background-size: 50%;
   }
@@ -94,13 +94,13 @@
 
 @media only screen and (min-width: 32em) {
   body {
-    background: url("desertimg2.png") no-repeat;
+    background: url("../desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
     background-size: 80%;
   }
   h1 {
-    background: url("/styles/desertlogo2.JPG") no-repeat;
+    background: url("../desertlogo2.JPG") no-repeat;
     background-position: center;
     background-size: 50%;
   }
@@ -108,14 +108,14 @@
 
 @media only screen and (min-width: 64em) {
   body {
-    background: url("desertimg2.png") no-repeat;
+    background: url("../desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
     background-position: right;
     background-size: 60%;
   }
   h1 {
     display: block;
-    background: url("/styles/desertlogo2.JPG") no-repeat;
+    background: url("../desertlogo2.JPG") no-repeat;
     background-position: center;
     background-size: 30%;
   }
@@ -302,23 +302,19 @@
 
 @media only screen and (min-width: 64em) {
   .wrapper {
-<<<<<<< HEAD
-    width: 20vw;
-=======
     width: 25vw;
->>>>>>> f5584187b9a5585ea5a34ae2844920c96372f7b4
     margin-left: -5vw;
   }
-  .wrapper .sidebar {
+  .sidebar {
     background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
     background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
     height: 100%;
-    width: 20%;
+    width: 5vw;
   }
-  .wrapper .sidebar:hover {
+  .sidebar:hover {
     pointer-events: none;
   }
-  .wrapper .sidebar:hover::before {
+  .sidebar:hover::before {
     content: "";
     background: transparent;
   }
