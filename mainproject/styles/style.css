@@ -23,18 +23,25 @@ h2, .summary h3,
 }
 
 .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p {
-  background: #F29040;
+  background: #155149;
   border: solid transparent;
   border-radius: 0 1em 0 1em;
   -webkit-box-shadow: 5px 3px 12px #494949;
           box-shadow: 5px 3px 12px #494949;
+  color: #F7EAC9;
   padding: 1em;
 }
 
 .summary p a, .preamble p a, .explanation p a, .participation p a, .benefits p a, .requirements p a {
-  color: #F7EAC9;
+  color: #F29040;
   font-weight: 600;
   text-decoration: none;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 footer {
@@ -42,14 +49,14 @@ footer {
   height: 100%;
   background-color: #8FBACC;
   text-align: center;
-  padding: .6em;
+  padding: 1em;
 }
 
 footer a {
+  color: black;
+  font-family: "Roboto", sans-serif;
   font-size: 1.25em;
   font-weight: 900;
-  color: #155149;
-  padding: 0 10px 0 10px;
 }
 
 @media only screen and (min-width: 20em) {
@@ -58,7 +65,7 @@ footer a {
     font-size: 2em;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    padding: 3.5em 1em .5em 1em;
+    padding: 3.25em 1em .5em 1em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -67,17 +74,18 @@ footer a {
   .benefits h3,
   .requirements h3 {
     font-size: 1.25em;
-    width: 75%;
+    width: 80%;
     height: 1em;
   }
   p {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
+    font-size: 18px;
   }
   .intro {
     text-align: center;
+  }
+  footer a {
+    font-size: 1em;
+    padding: 0 15px 0 15px;
   }
 }
 
@@ -97,7 +105,8 @@ footer a {
     padding: 4em;
   }
   h1 {
-    padding-top: 6em;
+    font-size: 3em;
+    padding-top: 4.5em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -105,11 +114,19 @@ footer a {
   .participation h3,
   .benefits h3,
   .requirements h3 {
+    font-size: 1.75em;
     width: 100%;
     height: 1em;
   }
+  p {
+    font-size: 1.5em;
+  }
   div {
     padding: 0 1.5em 0 1.5em;
+  }
+  footer a {
+    font-size: 1.5em;
+    padding: 0 20px 0 20px;
   }
 }
 
@@ -146,14 +163,14 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: 8em 11em;
-    background-size: 100%;
+    background-position: 150% 11em;
+    background-size: 80%;
   }
   h1 {
     display: block;
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 2em 0em;
-    background-size: 80%;
+    background-position: 3em 0em;
+    background-size: 70%;
   }
 }
 
