@@ -62,10 +62,10 @@ footer a {
 @media only screen and (min-width: 20em) {
   /*Small*/
   h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    padding: 3.25em 1em .5em 1em;
+    padding: 2.5em 1em .5em 1em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -73,12 +73,12 @@ footer a {
   .participation h3,
   .benefits h3,
   .requirements h3 {
-    font-size: 1.25em;
+    font-size: 1.15em;
     width: 80%;
     height: 1em;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .intro {
     text-align: center;
@@ -106,7 +106,7 @@ footer a {
   }
   h1 {
     font-size: 3em;
-    padding-top: 4.5em;
+    padding-top: 3.5em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -140,8 +140,8 @@ footer a {
   }
   h1 {
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: .5em 0em;
-    background-size: 90%;
+    background-position: 1.25em 0em;
+    background-size: 80%;
   }
 }
 
@@ -149,8 +149,8 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: center;
-    background-size: 150%;
+    background-position: 1.5em 2.25em;
+    background-size: 125%;
   }
   h1 {
     background: url("desertlogo2.JPG") no-repeat;
@@ -163,14 +163,14 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: 150% 11em;
-    background-size: 80%;
+    background-position: 2em 11em;
+    background-size: 125%;
   }
   h1 {
     display: block;
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 3em 0em;
-    background-size: 70%;
+    background-position: 1.25em 0em;
+    background-size: 85%;
   }
 }
 
