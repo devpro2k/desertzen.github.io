@@ -2,7 +2,6 @@
 @import "colors";
 @import "fonts";
 
-
 h2, .summary h3, 
 .preamble h3, 
 .explanation h3, 
@@ -23,7 +22,7 @@ h2, .summary h3,
 .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p {
     background: $green;
     border: solid transparent;
-    border-radius: 0 1em 0 1em;
+    border-radius: 5px;
     box-shadow: 5px 3px 12px rgb(73, 73, 73);
     color: $cream;
     padding: 1em;
@@ -96,6 +95,12 @@ footer a {
         padding: 0 1em 1em 1em;
 
     }
+    h1{
+        font-size: 1.75em;
+        font-family: $primary;
+        text-align: center;
+        padding: 4em 1em .5em 1em;
+    }
 }
 /*Large*/
 @media only screen and (min-width: 64em) {
@@ -108,7 +113,7 @@ footer a {
 
     h1{
         font-size: 3em;
-        padding-top: 3.5em;
+        padding-top: 4em;
     }
 
     h2, .summary h3, 

@@ -25,7 +25,7 @@ h2, .summary h3,
 .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p {
   background: #155149;
   border: solid transparent;
-  border-radius: 0 1em 0 1em;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 3px 12px #494949;
           box-shadow: 5px 3px 12px #494949;
   color: #F7EAC9;
@@ -95,6 +95,12 @@ footer a {
     float: right;
     padding: 0 1em 1em 1em;
   }
+  h1 {
+    font-size: 1.75em;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 4em 1em .5em 1em;
+  }
 }
 
 /*Large*/
@@ -106,7 +112,7 @@ footer a {
   }
   h1 {
     font-size: 3em;
-    padding-top: 3.5em;
+    padding-top: 4em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -135,12 +141,12 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: center;
+    background-position: -7em 0;
     background-size: 175%;
   }
   h1 {
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 1.25em 0em;
+    background-position: 1.5em 0em;
     background-size: 80%;
   }
 }
@@ -149,8 +155,8 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: 1.5em 2.25em;
-    background-size: 125%;
+    background-position: 9em 0em;
+    background-size: 100%;
   }
   h1 {
     background: url("desertlogo2.JPG") no-repeat;
@@ -163,14 +169,14 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: 2em 11em;
-    background-size: 125%;
+    background-position: 13em 0em;
+    background-size: 100%;
   }
   h1 {
     display: block;
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 1.25em 0em;
-    background-size: 85%;
+    background-position: 3.75em 0em;
+    background-size: 65%;
   }
 }
 
