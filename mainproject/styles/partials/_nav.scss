@@ -1,4 +1,18 @@
 /*side bar styling layout*/
+.design-selection li,
+  .design-name,
+  .designer-name,
+  .design-archives a,
+  .zen-resources a {
+    color: $cream;
+    text-decoration: none;
+    padding: .05em;
+  }
+
+  h3 {
+    color: rgb(255, 217, 0);
+  }
+
 .wrapper {
   //this will be used for the final results
   background-color: red;
@@ -25,21 +39,7 @@
   // used for testing purposes
   background-color: green;
 
-  .design-selection li,
-  .design-name,
-  .designer-name,
-  .design-archives a,
-  .zen-resources a {
-    color: $cream;
-    text-decoration: none;
-    padding: .05em;
-  }
-
-  h3 {
-    color: rgb(255, 217, 0);
-  }
-
-  &::after {
+    &::after {
     content: "≡";
     cursor: pointer;
     font-size: 2.5em;
@@ -58,7 +58,7 @@
     transition: .5s;
   }
 
-  @include MQ(S) {
+  @include MQ(M) {
     max-width: 30vw;
     position: absolute;
     left: 0;
@@ -79,7 +79,7 @@
       transition: .5s;
     }
 
-    @include MQ(S) {
+    @include MQ(M) {
       max-width: 30vw;
       position: absolute;
       left: 0;
@@ -131,7 +131,7 @@
     text-align: center;
   }
 
-  @include MQ(S) {
+  @include MQ(M) {
     max-width: 30vw;
     position: absolute;
     left: 0;
@@ -153,7 +153,7 @@
       text-align: center;
     }
 
-    @include MQ(S) {
+    @include MQ(M) {
       max-width: 30vw;
       position: absolute;
       left: 0;
@@ -168,45 +168,3 @@
 }
 
 
-@include MQ(L) {
-  .wrapper {
-    width: 25vw;
-    margin-left: -5vw;
-  }
-
-    .sidebar {
-      background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
-      height: 100%;
-      width: 5vw;
-  }
-
-    .sidebar:hover {
-      pointer-events: none;
-
-      &::before {
-        content: "";
-        background: transparent;
-      }
-    }
-  }
-
-@include MQ(M) {
-  .wrapper {
-    width: 25vw;
-    margin-left: -5vw;
-  .sidebar {
-    background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
-    height: 100%;
-  }
-
-  .sidebar:hover {
-    pointer-events: none;
-
-    &::before {
-      content: "";
-      background: transparent;
-    }
-  }
-
-}
-}
