@@ -1,17 +1,17 @@
 /*side bar styling layout*/
 .design-selection li,
-  .design-name,
-  .designer-name,
-  .design-archives a,
-  .zen-resources a {
-    color: $cream;
-    text-decoration: none;
-    padding: .05em;
-  }
+.design-name,
+.designer-name,
+.design-archives a,
+.zen-resources a {
+  color: $cream;
+  text-decoration: none;
+  padding: .05em;
+}
 
-  h3 {
-    color: rgb(255, 217, 0);
-  }
+h3 {
+  color: rgb(255, 217, 0);
+}
 
 .wrapper {
   //this will be used for the final results
@@ -23,6 +23,14 @@
     list-style-type: none;
     padding-left: 5vw;
   }
+
+  @include MQ(M) {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
 
 }
 
@@ -39,7 +47,7 @@
   // used for testing purposes
   background-color: green;
 
-    &::after {
+  &::after {
     content: "≡";
     cursor: pointer;
     font-size: 2.5em;
@@ -166,5 +174,3 @@
     }
   }
 }
-
-
