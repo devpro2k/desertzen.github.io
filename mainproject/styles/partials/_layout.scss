@@ -41,16 +41,36 @@ p {
 }
 
 footer {
-    max-width: 100%;
+    max-width: 55%;
     height: 100%;
     background-color: $blue;
+    border-radius: 5px;
     text-align: center;
+    transform: skew(-20deg);
     padding: 1em;
     & a {
         color: black;
         font-family: $header;
         font-size: 1.25em;
         font-weight: 900;
+    }
+    &::after {
+        content: "";
+        background-color: $blue;
+        border-radius: 5px;
+        box-shadow:
+                25px   0px 0 0 $blue,
+				58px  0px 0 0 $blue,
+				122px  0px 0 0 $blue,
+                155px  0px 0 0 $blue,
+                228px  0px 0 0 $blue,
+                243px  0px 0 0 $blue,
+                320px  0px 0 0 $blue;
+        margin-left: 5em;
+        padding: 1.40em;
+        padding-top: 1.5em;
+        padding-bottom: 1.25em;
+        padding-right: 1em;
     }
 }
 

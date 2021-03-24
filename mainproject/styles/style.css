@@ -11,7 +11,7 @@ h2, .summary h3,
 .requirements h3 {
   font-family: "Roboto", sans-serif;
   border: 2px solid #155149;
-  background-color: #8FBACC;
+  background-color: #6aa7c2;
   border-radius: 5px;
   -webkit-box-shadow: 5px 7px 12px #494949;
           box-shadow: 5px 7px 12px #494949;
@@ -45,10 +45,13 @@ p {
 }
 
 footer {
-  max-width: 100%;
+  max-width: 55%;
   height: 100%;
-  background-color: #8FBACC;
+  background-color: #6aa7c2;
+  border-radius: 5px;
   text-align: center;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
   padding: 1em;
 }
 
@@ -57,6 +60,19 @@ footer a {
   font-family: "Roboto", sans-serif;
   font-size: 1.25em;
   font-weight: 900;
+}
+
+footer::after {
+  content: "";
+  background-color: #6aa7c2;
+  border-radius: 5px;
+  -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 58px 0px 0 0 #6aa7c2, 122px 0px 0 0 #6aa7c2, 155px 0px 0 0 #6aa7c2, 228px 0px 0 0 #6aa7c2, 243px 0px 0 0 #6aa7c2, 320px 0px 0 0 #6aa7c2;
+          box-shadow: 25px 0px 0 0 #6aa7c2, 58px 0px 0 0 #6aa7c2, 122px 0px 0 0 #6aa7c2, 155px 0px 0 0 #6aa7c2, 228px 0px 0 0 #6aa7c2, 243px 0px 0 0 #6aa7c2, 320px 0px 0 0 #6aa7c2;
+  margin-left: 5em;
+  padding: 1.40em;
+  padding-top: 1.5em;
+  padding-bottom: 1.25em;
+  padding-right: 1em;
 }
 
 @media only screen and (min-width: 20em) {
@@ -289,8 +305,8 @@ footer a {
 
 .sidebar:hover::before {
   content: "";
-  background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
-  background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #6aa7c2));
+  background: linear-gradient(to top right, #155149, #A23216, #F29040, #6aa7c2 85%);
   position: fixed;
   left: 60vw;
   -webkit-transition: 1s;
@@ -365,8 +381,8 @@ footer a {
     margin-left: -5vw;
   }
   .sidebar {
-    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
-    background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #6aa7c2));
+    background: linear-gradient(to top right, #155149, #A23216, #F29040, #6aa7c2 85%);
     height: 100%;
     width: 5vw;
   }
@@ -385,8 +401,8 @@ footer a {
     margin-left: -5vw;
   }
   .wrapper .sidebar {
-    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #8FBACC));
-    background: linear-gradient(to top right, #155149, #A23216, #F29040, #8FBACC 85%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#155149), color-stop(#A23216), color-stop(#F29040), color-stop(85%, #6aa7c2));
+    background: linear-gradient(to top right, #155149, #A23216, #F29040, #6aa7c2 85%);
     height: 100%;
   }
   .wrapper .sidebar:hover {
