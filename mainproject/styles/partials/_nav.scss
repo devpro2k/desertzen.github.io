@@ -103,7 +103,7 @@
 
   &::before {
     content: "";
-    background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
+    //background: linear-gradient(to top right, $green, $red, $orange, $blue 85%, );
     position: fixed;
     left: 60vw;
     transition: 1s;
