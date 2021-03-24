@@ -105,6 +105,7 @@ p {
 footer a {
     font-size: 1em;
     padding: 0 10px 0 10px;
+    
 }
 }
 
@@ -121,6 +122,18 @@ footer a {
         text-align: center;
         padding: 4em 1em .5em 1em;
     }
+    footer {
+        font-size: 1em;
+        padding: .5em;
+    &::after {
+        content: "";
+        background-color: $blue;
+        border-radius: 5px;
+        padding: 1.40em;
+        padding-top: 2.75em;
+        padding-bottom: .75em;
+        padding-right: 1em;
+}}
 }
 /*Large*/
 @media only screen and (min-width: 64em) {
