@@ -9,6 +9,7 @@ h2, .summary h3,
 .benefits h3, 
 .requirements h3 {
     font-family: $header;
+    color: black;
     border: 2px solid $green;
     background-color: $blue;
     border-radius: 5px;
@@ -41,36 +42,16 @@ p {
 }
 
 footer {
-    max-width: 55%;
-    height: 100%;
+    float: left;
     background-color: $blue;
     border-radius: 5px;
-    text-align: center;
     transform: skew(-20deg);
-    padding: 1em;
+
     & a {
         color: black;
         font-family: $header;
         font-size: 1.25em;
         font-weight: 900;
-    }
-    &::after {
-        content: "";
-        background-color: $blue;
-        border-radius: 5px;
-        box-shadow:
-                25px   0px 0 0 $blue,
-				58px  0px 0 0 $blue,
-				122px  0px 0 0 $blue,
-                155px  0px 0 0 $blue,
-                228px  0px 0 0 $blue,
-                243px  0px 0 0 $blue,
-                320px  0px 0 0 $blue;
-        margin-left: 5em;
-        padding: 1.40em;
-        padding-top: 1.5em;
-        padding-bottom: 1.25em;
-        padding-right: 1em;
     }
 }
 
@@ -124,16 +105,6 @@ footer a {
     }
     footer {
         font-size: 1em;
-        padding: .5em;
-    &::after {
-        content: "";
-        background-color: $blue;
-        border-radius: 5px;
-        padding: 1.40em;
-        padding-top: 2.75em;
-        padding-bottom: .75em;
-        padding-right: 1em;
-}}
 }
 /*Large*/
 @media only screen and (min-width: 64em) {
@@ -146,7 +117,7 @@ footer a {
 
     h1{
         font-size: 3em;
-        padding-top: 4em;
+        padding-top: 3em;
     }
 
     h2, .summary h3, 
@@ -155,8 +126,8 @@ footer a {
     .participation h3, 
     .benefits h3, 
     .requirements h3 {
-        font-size: 1.75em;
-        width: 100%;
+        font-size: 1.5em;
+        width: 75%;
         height: 1em;
     }
 
@@ -167,9 +138,26 @@ footer a {
     div {
         padding: 0 1.5em 0 1.5em;
     }
-
-    footer a {
-        font-size: 1.5em;
-        padding: 0 20px 0 20px;
+    footer {
+        max-width: 30vw;
+        padding: 1em;
+        &::after {
+            content: "";
+            box-shadow:
+                    42px   0px 0 0 $blue,
+                    70px  0px 0 0 $blue,
+                    120px  0px 0 0 $blue,
+                    130px  0px 0 0 $blue,
+                    180px  0px 0 0 $blue;
+            margin-left: 3em;
+            padding: 1.40em;
+            padding-top: 1.05em;
+            padding-bottom: 1.02em;
+            padding-right: 1em;
+        }
     }
-}
+    footer a {
+        font-size: 1em;
+        font-weight: 900;
+        }
+}}

@@ -10,6 +10,7 @@ h2, .summary h3,
 .benefits h3,
 .requirements h3 {
   font-family: "Roboto", sans-serif;
+  color: black;
   border: 2px solid #155149;
   background-color: #6aa7c2;
   border-radius: 5px;
@@ -45,14 +46,11 @@ p {
 }
 
 footer {
-  max-width: 55%;
-  height: 100%;
+  float: left;
   background-color: #6aa7c2;
   border-radius: 5px;
-  text-align: center;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
-  padding: 1em;
 }
 
 footer a {
@@ -60,19 +58,6 @@ footer a {
   font-family: "Roboto", sans-serif;
   font-size: 1.25em;
   font-weight: 900;
-}
-
-footer::after {
-  content: "";
-  background-color: #6aa7c2;
-  border-radius: 5px;
-  -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 58px 0px 0 0 #6aa7c2, 122px 0px 0 0 #6aa7c2, 155px 0px 0 0 #6aa7c2, 228px 0px 0 0 #6aa7c2, 243px 0px 0 0 #6aa7c2, 320px 0px 0 0 #6aa7c2;
-          box-shadow: 25px 0px 0 0 #6aa7c2, 58px 0px 0 0 #6aa7c2, 122px 0px 0 0 #6aa7c2, 155px 0px 0 0 #6aa7c2, 228px 0px 0 0 #6aa7c2, 243px 0px 0 0 #6aa7c2, 320px 0px 0 0 #6aa7c2;
-  margin-left: 5em;
-  padding: 1.40em;
-  padding-top: 1.5em;
-  padding-bottom: 1.25em;
-  padding-right: 1em;
 }
 
 @media only screen and (min-width: 20em) {
@@ -119,21 +104,11 @@ footer::after {
   }
   footer {
     font-size: 1em;
-    padding: .5em;
   }
-  footer::after {
-    content: "";
-    background-color: #6aa7c2;
-    border-radius: 5px;
-    padding: 1.40em;
-    padding-top: 2.75em;
-    padding-bottom: .75em;
-    padding-right: 1em;
-  }
+  /*Large*/
 }
 
-/*Large*/
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 32em) and (min-width: 64em) {
   body {
     max-width: 65%;
     float: right;
@@ -141,7 +116,7 @@ footer::after {
   }
   h1 {
     font-size: 3em;
-    padding-top: 4em;
+    padding-top: 3em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -149,8 +124,8 @@ footer::after {
   .participation h3,
   .benefits h3,
   .requirements h3 {
-    font-size: 1.75em;
-    width: 100%;
+    font-size: 1.5em;
+    width: 75%;
     height: 1em;
   }
   p {
@@ -159,9 +134,23 @@ footer::after {
   div {
     padding: 0 1.5em 0 1.5em;
   }
+  footer {
+    max-width: 30vw;
+    padding: 1em;
+  }
+  footer::after {
+    content: "";
+    -webkit-box-shadow: 42px 0px 0 0 #6aa7c2, 70px 0px 0 0 #6aa7c2, 120px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2;
+            box-shadow: 42px 0px 0 0 #6aa7c2, 70px 0px 0 0 #6aa7c2, 120px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2;
+    margin-left: 3em;
+    padding: 1.40em;
+    padding-top: 1.05em;
+    padding-bottom: 1.02em;
+    padding-right: 1em;
+  }
   footer a {
-    font-size: 1.5em;
-    padding: 0 20px 0 20px;
+    font-size: 1em;
+    font-weight: 900;
   }
 }
 
@@ -204,7 +193,7 @@ footer::after {
   h1 {
     display: block;
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 3.75em 0em;
+    background-position: 2.25em 0em;
     background-size: 65%;
   }
 }
