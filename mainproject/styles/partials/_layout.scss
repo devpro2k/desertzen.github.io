@@ -2,6 +2,11 @@
 @import "colors";
 @import "fonts";
 
+
+body{
+    max-width: 64em;
+}
+
 h2, .summary h3, 
 .preamble h3, 
 .explanation h3, 
@@ -83,6 +88,11 @@ p {
 .intro {
     text-align: center;
 }
+
+footer{
+    padding: .5em;
+    margin: 1em auto 1em auto;
+}
 footer a {
     font-size: 1em;
     padding: 0 10px 0 10px;
@@ -105,9 +115,23 @@ footer a {
     }
     footer {
         font-size: 1em;
+        max-width: 30vw;;
+        padding: .5em;
+        &::after {
+            content: "";
+            box-shadow:
+                    42px   0px 0 0 $blue,
+                    62px   0px 0 0 $blue,
+                    110px  0px 0 0 $blue;
+            margin-left: 1.5em;
+            padding: 1.40em;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-right: .5em;
+        }
 }
 /*Large*/
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 67em) {
 
     body {
         max-width: 65%;
@@ -139,20 +163,25 @@ footer a {
         padding: 0 1.5em 0 1.5em;
     }
     footer {
-        max-width: 30vw;
+        max-width: 25vw;
         padding: 1em;
         &::after {
             content: "";
+            border-radius: 5px;
             box-shadow:
                     42px   0px 0 0 $blue,
-                    70px  0px 0 0 $blue,
-                    120px  0px 0 0 $blue,
-                    130px  0px 0 0 $blue,
-                    180px  0px 0 0 $blue;
-            margin-left: 3em;
+                    75px  0px 0 0 $blue,
+                    95px  0px 0 0 $blue,
+                    150px  0px 0 0 $blue,
+                    180px  0px 0 0 $blue,
+                    235px  0px 0 0 $blue,
+                    250px  0px 0 0 $blue,
+                    310px  0px 0 0 $blue;
+
+            margin-left: 8%;
             padding: 1.40em;
-            padding-top: 1.05em;
-            padding-bottom: 1.02em;
+            padding-top: 1em;
+            padding-bottom: 1em;
             padding-right: 1em;
         }
     }
