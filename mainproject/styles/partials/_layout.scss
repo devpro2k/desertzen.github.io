@@ -5,6 +5,32 @@
 
 body{
     max-width: 64em;
+    &::before {
+        content: "";
+        background-color: $blue;
+        border-radius: 3px;
+        box-shadow:
+                25px   0px 0 0 $blue,
+                50px  0px 0 0 $blue,
+                75px  0px 0 0 $blue,
+                100px  0px 0 0 $blue,
+                125px  0px 0 0 $blue,
+                150px  0px 0 0 $blue,
+                175px  0px 0 0 $blue,
+                225px  0px 0 0 $blue,
+                245px  0px 0 0 $blue,
+                265px  0px 0 0 $blue,
+                285px  0px 0 0 $blue,
+                335px  0px 0 0 $blue,
+                345px  0px 0 0 $blue,
+                360px  0px 0 0 $blue,
+                410px  0px 0 0 $blue,
+                465px  0px 0 0 $blue,
+                520px  0px 0 0 $blue;
+        padding: 1.5em;
+        padding-bottom: .5em;
+        padding-right: 1em;
+}
 }
 
 h2, .summary h3, 
@@ -50,8 +76,6 @@ footer {
     float: left;
     background-color: $blue;
     border-radius: 5px;
-    transform: skew(-20deg);
-
     & a {
         color: black;
         font-family: $header;
@@ -104,8 +128,8 @@ footer a {
     body {
         max-width: 28em;
         float: right;
+        margin-right: 10%;
         padding: 0 1em 1em 1em;
-
     }
     h1{
         font-size: 1.75em;
@@ -115,20 +139,9 @@ footer a {
     }
     footer {
         font-size: 1em;
-        max-width: 30vw;;
-        padding: .5em;
-        &::after {
-            content: "";
-            box-shadow:
-                    42px   0px 0 0 $blue,
-                    62px   0px 0 0 $blue,
-                    110px  0px 0 0 $blue;
-            margin-left: 1.5em;
-            padding: 1.40em;
-            padding-top: .5em;
-            padding-bottom: .5em;
-            padding-right: .5em;
-        }
+        width: 95%;
+        padding: .75em;
+
 }
 /*Large*/
 @media only screen and (min-width: 67em) {
@@ -141,7 +154,7 @@ footer a {
 
     h1{
         font-size: 3em;
-        padding-top: 3em;
+        padding-top: 4em;
     }
 
     h2, .summary h3, 
@@ -163,30 +176,30 @@ footer a {
         padding: 0 1.5em 0 1.5em;
     }
     footer {
-        max-width: 25vw;
+        max-width: 30vw;
+        margin-left: 2em;
         padding: 1em;
         &::after {
             content: "";
             border-radius: 5px;
             box-shadow:
-                    42px   0px 0 0 $blue,
-                    75px  0px 0 0 $blue,
-                    95px  0px 0 0 $blue,
-                    150px  0px 0 0 $blue,
-                    180px  0px 0 0 $blue,
-                    235px  0px 0 0 $blue,
-                    250px  0px 0 0 $blue,
-                    310px  0px 0 0 $blue;
-
-            margin-left: 8%;
+                    82px   0px 0 0 $blue,
+                    115px  0px 0 0 $blue,
+                    135px  0px 0 0 $blue,
+                    190px  0px 0 0 $blue,
+                    220px  0px 0 0 $blue,
+                    275px  0px 0 0 $blue,
+                    290px  0px 0 0 $blue,
+                    350px  0px 0 0 $blue;
+            margin-left: 5vw;
             padding: 1.40em;
-            padding-top: 1em;
-            padding-bottom: 1em;
+            padding-top: 1.55em;
+            padding-bottom: 1.15em;
             padding-right: 1em;
         }
     }
     footer a {
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: 900;
         }
 }}
