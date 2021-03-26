@@ -1,24 +1,17 @@
 /*media screen*/
-$S: 32em;
-$M: 52em;
+$M: 32em;
 $L: 64em;
 
 @mixin MQ($size) {
-  @if $size==S {
-    @media only screen and (min-width: $S) {
+  @if $size==M {
+    @media only screen and (min-width: $M) {
       @content;
     }
   }
-
-    @else if $size==M {
-      @media only screen and (min-width: $M) {
-        @content;
-      }
-    }
 
     @else if $size==L {
       @media only screen and (min-width: $L) {
         @content;
       }
     }
-  }
+}

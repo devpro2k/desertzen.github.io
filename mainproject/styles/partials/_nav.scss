@@ -30,7 +30,7 @@ h3 {
   }
 
   @include MQ(M) {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -72,7 +72,7 @@ h3 {
   }
 
   @include MQ(M) {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -93,7 +93,7 @@ h3 {
     }
 
     @include MQ(M) {
-      max-width: 30vw;
+      min-width: 32em;
       position: absolute;
       left: 0;
       top: 0;
@@ -145,7 +145,7 @@ h3 {
   }
 
   @include MQ(M) {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -167,7 +167,7 @@ h3 {
     }
 
     @include MQ(M) {
-      max-width: 30vw;
+      min-width: 32em;
       position: absolute;
       left: 0;
       top: 0;

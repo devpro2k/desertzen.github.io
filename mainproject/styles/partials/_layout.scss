@@ -8,27 +8,26 @@ body{
     &::before {
         content: "";
         background-color: $blue;
-        border-radius: 5px;
+        border-radius: 3px;
         box-shadow:
                 25px   0px 0 0 $blue,
                 50px  0px 0 0 $blue,
                 75px  0px 0 0 $blue,
                 100px  0px 0 0 $blue,
-                130px  0px 0 0 $blue,
-                160px  0px 0 0 $blue,
-                190px  0px 0 0 $blue,
-                210px  0px 0 0 $blue,
-                255px  0px 0 0 $blue,
-                280px  0px 0 0 $blue,
-                300px  0px 0 0 $blue,
+                125px  0px 0 0 $blue,
+                150px  0px 0 0 $blue,
+                175px  0px 0 0 $blue,
+                225px  0px 0 0 $blue,
+                245px  0px 0 0 $blue,
+                265px  0px 0 0 $blue,
+                285px  0px 0 0 $blue,
+                335px  0px 0 0 $blue,
                 345px  0px 0 0 $blue,
-                355px  0px 0 0 $blue,
-                370px  0px 0 0 $blue,
-                415px  0px 0 0 $blue,
-                458px  0px 0 0 $blue,
-                500px  0px 0 0 $blue;
-
-        padding: 1em;
+                360px  0px 0 0 $blue,
+                410px  0px 0 0 $blue,
+                465px  0px 0 0 $blue,
+                520px  0px 0 0 $blue;
+        padding: 1.5em;
         padding-bottom: .5em;
         padding-right: 1em;
 }

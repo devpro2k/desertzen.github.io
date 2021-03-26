@@ -10,10 +10,10 @@ body {
 body::before {
   content: "";
   background-color: #6aa7c2;
-  border-radius: 5px;
-  -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 160px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 210px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 280px 0px 0 0 #6aa7c2, 300px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 355px 0px 0 0 #6aa7c2, 370px 0px 0 0 #6aa7c2, 415px 0px 0 0 #6aa7c2, 458px 0px 0 0 #6aa7c2, 500px 0px 0 0 #6aa7c2;
-          box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 160px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 210px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 280px 0px 0 0 #6aa7c2, 300px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 355px 0px 0 0 #6aa7c2, 370px 0px 0 0 #6aa7c2, 415px 0px 0 0 #6aa7c2, 458px 0px 0 0 #6aa7c2, 500px 0px 0 0 #6aa7c2;
-  padding: 1em;
+  border-radius: 3px;
+  -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 125px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 175px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 245px 0px 0 0 #6aa7c2, 265px 0px 0 0 #6aa7c2, 285px 0px 0 0 #6aa7c2, 335px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 410px 0px 0 0 #6aa7c2, 465px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2;
+          box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 125px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 175px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 245px 0px 0 0 #6aa7c2, 265px 0px 0 0 #6aa7c2, 285px 0px 0 0 #6aa7c2, 335px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 410px 0px 0 0 #6aa7c2, 465px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2;
+  padding: 1.5em;
   padding-bottom: .5em;
   padding-right: 1em;
 }
@@ -249,9 +249,9 @@ h3 {
   padding-left: 5vw;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 32em) {
   .wrapper {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -294,9 +294,9 @@ h3 {
   transition: .5s;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 32em) {
   .sidebar {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -318,9 +318,9 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 52em) and (min-width: 52em) {
+@media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -371,9 +371,9 @@ h3 {
   text-align: center;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 32em) {
   .sidebar:hover {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
@@ -397,9 +397,9 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 52em) and (min-width: 52em) {
+@media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar:hover {
-    max-width: 30vw;
+    min-width: 32em;
     position: absolute;
     left: 0;
     top: 0;
