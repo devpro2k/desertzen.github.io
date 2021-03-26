@@ -5,32 +5,6 @@
 
 body{
     max-width: 64em;
-    &::before {
-        content: "";
-        background-color: $blue;
-        border-radius: 3px;
-        box-shadow:
-                25px   0px 0 0 $blue,
-                50px  0px 0 0 $blue,
-                75px  0px 0 0 $blue,
-                100px  0px 0 0 $blue,
-                125px  0px 0 0 $blue,
-                150px  0px 0 0 $blue,
-                175px  0px 0 0 $blue,
-                225px  0px 0 0 $blue,
-                245px  0px 0 0 $blue,
-                265px  0px 0 0 $blue,
-                285px  0px 0 0 $blue,
-                335px  0px 0 0 $blue,
-                345px  0px 0 0 $blue,
-                360px  0px 0 0 $blue,
-                410px  0px 0 0 $blue,
-                465px  0px 0 0 $blue,
-                520px  0px 0 0 $blue;
-        padding: 1.5em;
-        padding-bottom: .5em;
-        padding-right: 1em;
-}
 }
 
 h2, .summary h3, 
@@ -84,14 +58,32 @@ footer {
     }
 }
 
-@media only screen and (min-width: 20em){
+@media only screen and (min-width: 16em){
 /*Small*/
-
+body::before {
+        content: "";
+        background-color: $blue;
+        border-radius: 3px;
+        box-shadow:
+                15px   0px 0 0 $blue,
+                50px  0px 0 0 $blue,
+                75px  0px 0 0 $blue,
+                90px  0px 0 0 $blue,
+                140px  0px 0 0 $blue,
+                170px  0px 0 0 $blue,
+                225px  0px 0 0 $blue,
+                235px  0px 0 0 $blue,
+                290px  0px 0 0 $blue,
+                340px  0px 0 0 $blue;
+        padding: 2em;
+        padding-bottom: .25em;
+        padding-right: .25em;
+}
 h1{
     font-size: 1.75em;
     font-family: $primary;
     text-align: center;
-    padding: 2.5em 1em .5em 1em;
+    padding: 3em 1em .5em 1em;
 }
 
 h2, .summary h3, 
@@ -100,7 +92,7 @@ h2, .summary h3,
 .participation h3, 
 .benefits h3, 
 .requirements h3 {
-    font-size: 1.15em;
+    font-size: 1em;
     width: 80%;
     height: 1em;
 }
@@ -114,22 +106,24 @@ p {
 }
 
 footer{
+    text-align: center;
+    width: 95%;
     padding: .5em;
-    margin: 1em auto 1em auto;
 }
 footer a {
     font-size: 1em;
-    padding: 0 10px 0 10px;
+    padding: 0 8px 0 8px;
     
 }
 }
 
 @media only screen and (min-width: 32em) {
     body {
-        max-width: 28em;
+        max-width: 64em;
         float: right;
         margin-right: 10%;
         padding: 0 1em 1em 1em;
+        
     }
     h1{
         font-size: 1.75em;
@@ -150,6 +144,32 @@ footer a {
         max-width: 65%;
         float: right;
         padding: 4em;
+        &::before {
+            content: "";
+            background-color: $blue;
+            border-radius: 3px;
+            box-shadow:
+                    25px   0px 0 0 $blue,
+                    50px  0px 0 0 $blue,
+                    75px  0px 0 0 $blue,
+                    100px  0px 0 0 $blue,
+                    125px  0px 0 0 $blue,
+                    150px  0px 0 0 $blue,
+                    175px  0px 0 0 $blue,
+                    225px  0px 0 0 $blue,
+                    245px  0px 0 0 $blue,
+                    265px  0px 0 0 $blue,
+                    285px  0px 0 0 $blue,
+                    335px  0px 0 0 $blue,
+                    345px  0px 0 0 $blue,
+                    360px  0px 0 0 $blue,
+                    410px  0px 0 0 $blue,
+                    465px  0px 0 0 $blue,
+                    520px  0px 0 0 $blue;
+            padding: 2em;
+            padding-bottom: .5em;
+            padding-right: 1em;
+    }
     }
 
     h1{

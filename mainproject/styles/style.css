@@ -7,17 +7,6 @@ body {
   max-width: 64em;
 }
 
-body::before {
-  content: "";
-  background-color: #6aa7c2;
-  border-radius: 3px;
-  -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 125px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 175px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 245px 0px 0 0 #6aa7c2, 265px 0px 0 0 #6aa7c2, 285px 0px 0 0 #6aa7c2, 335px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 410px 0px 0 0 #6aa7c2, 465px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2;
-          box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 125px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 175px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 245px 0px 0 0 #6aa7c2, 265px 0px 0 0 #6aa7c2, 285px 0px 0 0 #6aa7c2, 335px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 410px 0px 0 0 #6aa7c2, 465px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2;
-  padding: 1.5em;
-  padding-bottom: .5em;
-  padding-right: 1em;
-}
-
 h2, .summary h3,
 .preamble h3,
 .explanation h3,
@@ -73,13 +62,23 @@ footer a {
   font-weight: 900;
 }
 
-@media only screen and (min-width: 20em) {
+@media only screen and (min-width: 16em) {
   /*Small*/
+  body::before {
+    content: "";
+    background-color: #6aa7c2;
+    border-radius: 3px;
+    -webkit-box-shadow: 15px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 90px 0px 0 0 #6aa7c2, 140px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 340px 0px 0 0 #6aa7c2;
+            box-shadow: 15px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 90px 0px 0 0 #6aa7c2, 140px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 340px 0px 0 0 #6aa7c2;
+    padding: 2em;
+    padding-bottom: .25em;
+    padding-right: .25em;
+  }
   h1 {
     font-size: 1.75em;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    padding: 2.5em 1em .5em 1em;
+    padding: 3em 1em .5em 1em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -87,7 +86,7 @@ footer a {
   .participation h3,
   .benefits h3,
   .requirements h3 {
-    font-size: 1.15em;
+    font-size: 1em;
     width: 80%;
     height: 1em;
   }
@@ -98,18 +97,19 @@ footer a {
     text-align: center;
   }
   footer {
+    text-align: center;
+    width: 95%;
     padding: .5em;
-    margin: 1em auto 1em auto;
   }
   footer a {
     font-size: 1em;
-    padding: 0 10px 0 10px;
+    padding: 0 8px 0 8px;
   }
 }
 
 @media only screen and (min-width: 32em) {
   body {
-    max-width: 28em;
+    max-width: 64em;
     float: right;
     margin-right: 10%;
     padding: 0 1em 1em 1em;
@@ -133,6 +133,16 @@ footer a {
     max-width: 65%;
     float: right;
     padding: 4em;
+  }
+  body::before {
+    content: "";
+    background-color: #6aa7c2;
+    border-radius: 3px;
+    -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 125px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 175px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 245px 0px 0 0 #6aa7c2, 265px 0px 0 0 #6aa7c2, 285px 0px 0 0 #6aa7c2, 335px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 410px 0px 0 0 #6aa7c2, 465px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2;
+            box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 125px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 175px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 245px 0px 0 0 #6aa7c2, 265px 0px 0 0 #6aa7c2, 285px 0px 0 0 #6aa7c2, 335px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 410px 0px 0 0 #6aa7c2, 465px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2;
+    padding: 2em;
+    padding-bottom: .5em;
+    padding-right: 1em;
   }
   h1 {
     font-size: 3em;
@@ -177,7 +187,7 @@ footer a {
 }
 
 /*media screen*/
-@media only screen and (min-width: 20em) {
+@media only screen and (min-width: 16em) {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
@@ -195,7 +205,7 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: 9em 0em;
+    background-position: 14em 0em;
     background-size: 100%;
   }
   h1 {
@@ -205,7 +215,7 @@ footer a {
   }
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 67em) {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;

@@ -2,7 +2,7 @@
 @import "colors";
 
 
-@media only screen and (min-width: 20em) {
+@media only screen and (min-width: 16em) {
     html {
         background: url("desertimg2.png") no-repeat;
         background-attachment: fixed, scroll;
@@ -21,7 +21,7 @@
     html {
         background: url("desertimg2.png") no-repeat;
         background-attachment: fixed, scroll;
-        background-position: 9em 0em;
+        background-position: 14em 0em;
         background-size: 100%;
     }
         
@@ -32,7 +32,7 @@
          }   
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 67em) {
 
     html {
         background: url("desertimg2.png") no-repeat;
