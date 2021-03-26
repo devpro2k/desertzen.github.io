@@ -109,16 +109,15 @@ footer a {
 
 @media only screen and (min-width: 32em) {
   body {
-    max-width: 64em;
+    max-width: 28em;
     float: right;
-    margin-right: 10%;
     padding: 0 1em 1em 1em;
   }
   h1 {
     font-size: 1.75em;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    padding: 4em 1em .5em 1em;
+    padding: 3.5em 1em .5em 1em;
   }
   footer {
     font-size: 1em;
@@ -128,18 +127,17 @@ footer a {
   /*Large*/
 }
 
-@media only screen and (min-width: 32em) and (min-width: 67em) {
+@media only screen and (min-width: 32em) and (min-width: 64em) {
   body {
-    max-width: 65%;
-    float: right;
-    padding: 4em;
+    max-width: 70%;
+    padding: 2em 0em 2em 0em;
   }
   body::before {
     content: "";
     background-color: #6aa7c2;
     border-radius: 3px;
-    -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
-            box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
+    -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
+            box-shadow: 25px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
     padding: 2em;
     padding-bottom: .5em;
     padding-right: 1em;
@@ -205,17 +203,17 @@ footer a {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
-    background-position: 14em 0em;
-    background-size: 100%;
+    background-position: 7em 0em;
+    background-size: 110%;
   }
   h1 {
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 1.5em 0;
-    background-size: 80%;
+    background-position: 3.25em 0;
+    background-size: 60%;
   }
 }
 
-@media only screen and (min-width: 67em) {
+@media only screen and (min-width: 64em) {
   html {
     background: url("desertimg2.png") no-repeat;
     background-attachment: fixed, scroll;
