@@ -1,7 +1,4 @@
 /*side bar styling layout*/
-
-
-/* test styling*/
 .design-selection li,
 .design-name,
 .designer-name,
@@ -10,14 +7,13 @@
   color: $cream;
   text-decoration: none;
   padding: .05em;
+  position: absolute;
 }
 
-/*headings styling*/
 h3 {
   color: rgb(255, 217, 0);
 }
 
-/*main contianer styling*/
 .wrapper {
   //this will be used for the final results
   background-color: red;
@@ -30,7 +26,7 @@ h3 {
   }
 
   @include MQ(M) {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -72,7 +68,7 @@ h3 {
   }
 
   @include MQ(M) {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -93,7 +89,7 @@ h3 {
     }
 
     @include MQ(M) {
-      min-width: 32em;
+      max-width: 30vw;
       position: absolute;
       left: 0;
       top: 0;
@@ -145,7 +141,7 @@ h3 {
   }
 
   @include MQ(M) {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -167,7 +163,7 @@ h3 {
     }
 
     @include MQ(M) {
-      min-width: 32em;
+      max-width: 30vw;
       position: absolute;
       left: 0;
       top: 0;

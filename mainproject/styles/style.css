@@ -231,7 +231,6 @@ footer a {
 }
 
 /*side bar styling layout*/
-/* test styling*/
 .design-selection li,
 .design-name,
 .designer-name,
@@ -240,14 +239,13 @@ footer a {
   color: #F7EAC9;
   text-decoration: none;
   padding: .05em;
+  position: absolute;
 }
 
-/*headings styling*/
 h3 {
   color: #ffd900;
 }
 
-/*main contianer styling*/
 .wrapper {
   background-color: red;
   width: 88%;
@@ -261,7 +259,7 @@ h3 {
 
 @media only screen and (min-width: 32em) {
   .wrapper {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -306,7 +304,7 @@ h3 {
 
 @media only screen and (min-width: 32em) {
   .sidebar {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -330,7 +328,7 @@ h3 {
 
 @media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -383,7 +381,7 @@ h3 {
 
 @media only screen and (min-width: 32em) {
   .sidebar:hover {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -409,7 +407,7 @@ h3 {
 
 @media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar:hover {
-    min-width: 32em;
+    max-width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
