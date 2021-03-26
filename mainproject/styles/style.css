@@ -7,6 +7,17 @@ body {
   max-width: 64em;
 }
 
+body::before {
+  content: "";
+  background-color: #6aa7c2;
+  border-radius: 5px;
+  -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 160px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 210px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 280px 0px 0 0 #6aa7c2, 300px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 355px 0px 0 0 #6aa7c2, 370px 0px 0 0 #6aa7c2, 415px 0px 0 0 #6aa7c2, 458px 0px 0 0 #6aa7c2, 500px 0px 0 0 #6aa7c2;
+          box-shadow: 25px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 100px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 160px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 210px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 280px 0px 0 0 #6aa7c2, 300px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 355px 0px 0 0 #6aa7c2, 370px 0px 0 0 #6aa7c2, 415px 0px 0 0 #6aa7c2, 458px 0px 0 0 #6aa7c2, 500px 0px 0 0 #6aa7c2;
+  padding: 1em;
+  padding-bottom: .5em;
+  padding-right: 1em;
+}
+
 h2, .summary h3,
 .preamble h3,
 .explanation h3,
@@ -53,8 +64,6 @@ footer {
   float: left;
   background-color: #6aa7c2;
   border-radius: 5px;
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
 }
 
 footer a {
@@ -102,6 +111,7 @@ footer a {
   body {
     max-width: 28em;
     float: right;
+    margin-right: 10%;
     padding: 0 1em 1em 1em;
   }
   h1 {
@@ -112,18 +122,8 @@ footer a {
   }
   footer {
     font-size: 1em;
-    max-width: 30vw;
-    padding: .5em;
-  }
-  footer::after {
-    content: "";
-    -webkit-box-shadow: 42px 0px 0 0 #6aa7c2, 62px 0px 0 0 #6aa7c2, 110px 0px 0 0 #6aa7c2;
-            box-shadow: 42px 0px 0 0 #6aa7c2, 62px 0px 0 0 #6aa7c2, 110px 0px 0 0 #6aa7c2;
-    margin-left: 1.5em;
-    padding: 1.40em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-right: .5em;
+    width: 95%;
+    padding: .75em;
   }
   /*Large*/
 }
@@ -136,7 +136,7 @@ footer a {
   }
   h1 {
     font-size: 3em;
-    padding-top: 3em;
+    padding-top: 4em;
   }
   h2, .summary h3,
   .preamble h3,
@@ -155,22 +155,23 @@ footer a {
     padding: 0 1.5em 0 1.5em;
   }
   footer {
-    max-width: 25vw;
+    max-width: 30vw;
+    margin-left: 2em;
     padding: 1em;
   }
   footer::after {
     content: "";
     border-radius: 5px;
-    -webkit-box-shadow: 42px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 95px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 250px 0px 0 0 #6aa7c2, 310px 0px 0 0 #6aa7c2;
-            box-shadow: 42px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 95px 0px 0 0 #6aa7c2, 150px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 250px 0px 0 0 #6aa7c2, 310px 0px 0 0 #6aa7c2;
-    margin-left: 8%;
+    -webkit-box-shadow: 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
+            box-shadow: 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
+    margin-left: 5vw;
     padding: 1.40em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1.55em;
+    padding-bottom: 1.15em;
     padding-right: 1em;
   }
   footer a {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 900;
   }
 }
@@ -214,12 +215,13 @@ footer a {
   h1 {
     display: block;
     background: url("desertlogo2.JPG") no-repeat;
-    background-position: 2.25em 0em;
+    background-position: 3.5em 0em;
     background-size: 65%;
   }
 }
 
 /*side bar styling layout*/
+/* test styling*/
 .design-selection li,
 .design-name,
 .designer-name,
@@ -230,10 +232,12 @@ footer a {
   padding: .05em;
 }
 
+/*headings styling*/
 h3 {
   color: #ffd900;
 }
 
+/*main contianer styling*/
 .wrapper {
   background-color: red;
   width: 88%;
