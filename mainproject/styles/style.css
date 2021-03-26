@@ -68,11 +68,11 @@ footer a {
     content: "";
     background-color: #6aa7c2;
     border-radius: 3px;
-    -webkit-box-shadow: 15px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 90px 0px 0 0 #6aa7c2, 140px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 340px 0px 0 0 #6aa7c2;
-            box-shadow: 15px 0px 0 0 #6aa7c2, 50px 0px 0 0 #6aa7c2, 75px 0px 0 0 #6aa7c2, 90px 0px 0 0 #6aa7c2, 140px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 225px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 340px 0px 0 0 #6aa7c2;
+    -webkit-box-shadow: 15px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 65px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2;
+            box-shadow: 15px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 65px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2;
     padding: 2em;
-    padding-bottom: .25em;
-    padding-right: .25em;
+    padding-bottom: .1em;
+    padding-right: .05em;
   }
   h1 {
     font-size: 1.75em;

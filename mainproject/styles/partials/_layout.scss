@@ -66,18 +66,16 @@ body::before {
         border-radius: 3px;
         box-shadow:
                 15px   0px 0 0 $blue,
-                50px  0px 0 0 $blue,
-                75px  0px 0 0 $blue,
-                90px  0px 0 0 $blue,
-                140px  0px 0 0 $blue,
+                40px  0px 0 0 $blue,
+                65px  0px 0 0 $blue,
+                105px  0px 0 0 $blue,
+                130px  0px 0 0 $blue,
                 170px  0px 0 0 $blue,
-                225px  0px 0 0 $blue,
-                235px  0px 0 0 $blue,
-                290px  0px 0 0 $blue,
-                340px  0px 0 0 $blue;
+                180px  0px 0 0 $blue,
+                220px  0px 0 0 $blue;
         padding: 2em;
-        padding-bottom: .25em;
-        padding-right: .25em;
+        padding-bottom: .1em;
+        padding-right: .05em;
 }
 h1{
     font-size: 1.75em;
