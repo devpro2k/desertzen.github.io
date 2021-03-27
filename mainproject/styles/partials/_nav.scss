@@ -178,6 +178,7 @@ h3 {
 
 @include MQ(L) {
   .wrapper {
+    width: 22vw;
     position: fixed;
   }
 }
