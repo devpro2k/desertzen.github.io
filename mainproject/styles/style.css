@@ -237,7 +237,8 @@ footer a {
   color: #F7EAC9;
   text-decoration: none;
   padding: .05em;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 h3 {
