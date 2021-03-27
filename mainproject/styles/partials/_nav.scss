@@ -175,3 +175,9 @@ h3 {
     }
   }
 }
+
+@include MQ(L, M){
+  .wrapper{
+    position: fixed;
+  }
+}
