@@ -16,7 +16,7 @@ h3 {
 
 .wrapper {
   //this will be used for the final results
-  background-color: red;
+  background-color: $green;
   width: 88%;
   padding-left: 5vw;
 
@@ -179,6 +179,13 @@ h3 {
 @include MQ(L) {
   .wrapper {
     width: 22vw;
+    position: fixed;
+  }
+}
+
+@include MQ(M) {
+  .wrapper {
+    width: 30vw;
     position: fixed;
   }
 }
