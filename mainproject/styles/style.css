@@ -134,6 +134,7 @@ footer a {
   }
   body::before {
     content: "";
+    margin-left: 5em;
     background-color: #6aa7c2;
     border-radius: 3px;
     -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
@@ -163,15 +164,16 @@ footer a {
     padding: 0 1.5em 0 1.5em;
   }
   footer {
-    max-width: 30vw;
+    max-width: 35vw;
     margin-left: 2em;
     padding: 1em;
   }
   footer::after {
     content: "";
+    background: #6aa7c2;
     border-radius: 5px;
-    -webkit-box-shadow: 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
-            box-shadow: 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
+    -webkit-box-shadow: 52px 0px 0 0 #6aa7c2, 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
+            box-shadow: 52px 0px 0 0 #6aa7c2, 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
     margin-left: 5vw;
     padding: 1.40em;
     padding-top: 1.55em;
@@ -234,6 +236,7 @@ footer a {
 .designer-name,
 .design-archives a,
 .zen-resources a {
+  font-family: "Oswald", sans-serif;
   color: #F7EAC9;
   text-decoration: none;
   padding: .05em;
@@ -242,13 +245,14 @@ footer a {
 }
 
 h3 {
-  color: #ffd900;
+  font-family: "Roboto", sans-serif;
+  color: #F29040;
 }
 
 .wrapper {
   background-color: #155149;
   width: 88%;
-  padding-left: 5vw;
+  padding: 0 3vw 0 3vw;
 }
 
 .wrapper ul {
@@ -416,17 +420,29 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 64em) {
-  .wrapper {
-    width: 22vw;
-    position: fixed;
-  }
-}
-
 @media only screen and (min-width: 32em) {
   .wrapper {
     width: 30vw;
     position: fixed;
+    -webkit-box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
+            box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .wrapper {
+    width: 22vw;
+    position: fixed;
+    -webkit-box-shadow: 4px 4px 12px #000000, 25px 25px 0px #6aa7c2;
+            box-shadow: 4px 4px 12px #000000, 25px 25px 0px #6aa7c2;
+    padding: 3vw;
+  }
+  .wrapper::before {
+    content: "Menu";
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #F29040;
   }
 }
 /*# sourceMappingURL=style.css.map */
