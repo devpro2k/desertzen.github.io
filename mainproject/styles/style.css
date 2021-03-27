@@ -258,7 +258,7 @@ h3 {
 
 @media only screen and (min-width: 32em) {
   .wrapper {
-    max-width: 30vw;
+    width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -280,7 +280,7 @@ h3 {
   top: 0;
   width: 170vw;
   height: 50px;
-  background-color: green;
+  background-color: transparent;
 }
 
 .sidebar::after {
@@ -327,7 +327,7 @@ h3 {
 
 @media only screen and (min-width: 32em) and (min-width: 32em) {
   .sidebar {
-    max-width: 30vw;
+    width: 30vw;
     position: absolute;
     left: 0;
     top: 0;

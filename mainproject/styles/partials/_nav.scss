@@ -26,12 +26,12 @@ h3 {
   }
 
   @include MQ(M) {
-    max-width: 30vw;
+    width: 30vw;
     position: absolute;
     left: 0;
     top: 0;
 
-}
+  }
 
 }
 
@@ -46,7 +46,7 @@ h3 {
   width: 170vw;
   height: 50px;
   // used for testing purposes
-  background-color: green;
+  background-color: transparent;
 
   &::after {
     content: "≡";
@@ -89,7 +89,7 @@ h3 {
     }
 
     @include MQ(M) {
-      max-width: 30vw;
+      width: 30vw;
       position: absolute;
       left: 0;
       top: 0;
@@ -176,8 +176,8 @@ h3 {
   }
 }
 
-@include MQ(L){
-  .wrapper{
+@include MQ(L) {
+  .wrapper {
     position: fixed;
   }
 }
