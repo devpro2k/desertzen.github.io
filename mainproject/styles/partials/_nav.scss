@@ -176,7 +176,7 @@ h3 {
   }
 }
 
-@include MQ(L, M){
+@include MQ(L){
   .wrapper{
     position: fixed;
   }
