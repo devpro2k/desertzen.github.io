@@ -48,7 +48,7 @@ h3 {
   width: 170vw;
   height: 50px;
   // used for testing purposes
-  background-color: transparent;
+  background-color: $green;
 
   &::after {
     content: "≡";
@@ -180,7 +180,7 @@ h3 {
 
 @include MQ(M) {
   .wrapper {
-    width: 30vw;
+    width: 28vw;
     position: fixed;
     box-shadow: 
     4px 4px 12px $black,
@@ -190,7 +190,7 @@ h3 {
 
 @include MQ(L) {
   .wrapper {
-    width: 22vw;
+    width: 24vw;
     position: fixed;
     box-shadow: 
     4px 4px 12px $black,
