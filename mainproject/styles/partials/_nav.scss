@@ -185,6 +185,7 @@ h3 {
     box-shadow: 
     4px 4px 12px $black,
     20px 20px 0px $blue;
+    overflow: hidden;
   }
   .sidebar:hover {
     pointer-events: none;
