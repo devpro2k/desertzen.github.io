@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*main scss for styling project*/
 /*content style page layout*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
@@ -425,6 +426,12 @@ h3 {
     position: fixed;
     -webkit-box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
             box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
+    overflow: hidden;
+  }
+  .sidebar:hover {
+    pointer-events: none;
+    overflow: hidden;
+    height: auto;
   }
 }
 
@@ -442,6 +449,9 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #F29040;
+  }
+  .sidebar:hover {
+    pointer-events: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
