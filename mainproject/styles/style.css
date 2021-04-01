@@ -43,6 +43,15 @@ h2, .summary h3,
   text-decoration: none;
 }
 
+.summary p a:hover, .preamble p a:hover, .explanation p a:hover, .participation p a:hover, .benefits p a:hover, .requirements p a:hover {
+  background-color: #F7EAC9;
+  padding: .15em;
+}
+
+.summary p a:visited, .preamble p a:visited, .explanation p a:visited, .participation p a:visited, .benefits p a:visited, .requirements p a:visited {
+  color: #A23216;
+}
+
 p {
   font-family: "Oswald", sans-serif;
   font-size: 18px;

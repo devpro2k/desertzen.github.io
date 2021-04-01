@@ -37,6 +37,13 @@ h2, .summary h3,
         font-weight: 600;
         text-decoration: none;
     }
+    & a:hover {
+        background-color: $cream;
+        padding: .15em;   
+    }
+    & a:visited {
+        color: $red;
+    }
 
 }
 
