@@ -421,6 +421,9 @@ h3 {
 }
 
 @media only screen and (min-width: 32em) {
+  .sidebar {
+    height: auto;
+  }
   .wrapper {
     width: 28vw;
     position: fixed;

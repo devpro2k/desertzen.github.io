@@ -179,6 +179,10 @@ h3 {
 }
 
 @include MQ(M) {
+  .sidebar {
+    height: auto;
+  }
+  
   .wrapper {
     width: 28vw;
     position: fixed;
