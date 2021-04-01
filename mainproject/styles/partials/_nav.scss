@@ -192,6 +192,11 @@ h3 {
     overflow: hidden;
   }
 
+  .wrapper a:hover {
+    color: $orange;
+    text-decoration: underline;
+  }
+
   .sidebar:hover {
     pointer-events: none;
     overflow: hidden;

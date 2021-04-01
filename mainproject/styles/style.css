@@ -463,6 +463,10 @@ h3 {
             box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
     overflow: hidden;
   }
+  .wrapper a:hover {
+    color: #F29040;
+    text-decoration: underline;
+  }
   .sidebar:hover {
     pointer-events: none;
     overflow: hidden;
