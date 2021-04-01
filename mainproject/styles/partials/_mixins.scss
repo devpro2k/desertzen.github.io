@@ -9,9 +9,9 @@ $L: 64em;
     }
   }
 
-    @else if $size==L {
-      @media only screen and (min-width: $L) {
-        @content;
-      }
+  @else if $size==L {
+    @media only screen and (min-width: $L) {
+      @content;
     }
+  }
 }

@@ -182,15 +182,16 @@ h3 {
   .sidebar {
     height: auto;
   }
-  
+
   .wrapper {
     width: 28vw;
     position: fixed;
-    box-shadow: 
-    4px 4px 12px $black,
-    20px 20px 0px $blue;
+    box-shadow:
+      4px 4px 12px $black,
+      20px 20px 0px $blue;
     overflow: hidden;
   }
+
   .sidebar:hover {
     pointer-events: none;
     overflow: hidden;
@@ -202,20 +203,22 @@ h3 {
   .wrapper {
     width: 24vw;
     position: fixed;
-    box-shadow: 
-    4px 4px 12px $black,
-    25px 25px 0px $blue;
+    box-shadow:
+      4px 4px 12px $black,
+      25px 25px 0px $blue;
     padding: 3vw;
-  &::before {
-    content: "Menu";
-    font-size: 1.5em;
-    font-family: $header;
-    font-weight: 700;    
-    color: $orange;
+
+    &::before {
+      content: "Menu";
+      font-size: 1.5em;
+      font-family: $header;
+      font-weight: 700;
+      color: $orange;
 
 
-  }  
+    }
   }
+
   .sidebar:hover {
     pointer-events: none;
   }
