@@ -159,6 +159,9 @@ footer a {
 }
 
 @media only screen and (min-width: 32em) and (min-width: 64em) {
+  .wrapper a {
+    font-size: 1.25em;
+  }
   body {
     max-width: 70%;
     padding: 2em 0em 2em 0em;
