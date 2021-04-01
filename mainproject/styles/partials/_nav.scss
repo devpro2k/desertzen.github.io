@@ -186,6 +186,9 @@ h3 {
     4px 4px 12px $black,
     20px 20px 0px $blue;
   }
+  .sidebar:hover {
+    pointer-events: none;
+  }
 }
 
 @include MQ(L) {
